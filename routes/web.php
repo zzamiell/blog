@@ -13,5 +13,7 @@ use App\Http\Controllers\WordPressController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [WordPressController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/blog', [WordPressController::class, 'index']);
