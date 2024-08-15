@@ -8,12 +8,13 @@
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <title>{{ $title ?? 'Admin' }}</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     @include('layouts.head')
 
     {{-- END TEMPLATE WP --}}
 
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireStyles --}}
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    @livewireStyles
 </head>
 
 <body
@@ -99,146 +100,39 @@
     </div>
     </div>
 
-    <main id="content" class="site-main post-63 page type-page status-publish hentry">
-        <div class="page-content">
-            <div data-elementor-type="wp-page" data-elementor-id="63" class="elementor elementor-63">
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-1507cd83 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="1507cd83" data-element_type="section"
-                    data-settings='{"jet_parallax_layout_list":[{"_id":"57ce2af","jet_parallax_layout_image":{"url":"","id":"","size":""},"jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}],"background_background":"classic"}'>
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a33e70c"
-                            data-id="5a33e70c" data-element_type="column">
-                            <div class="elementor-widget-wrap"></div>
-                        </div>
-                    </div>
-                </section>
-                {{ $slot }}
-                {{-- @include('livewire.home.banner')
-                @include('livewire.home.layanan_unggulan')
-                @include('livewire.home.artikel_dan_berita')
-                @include('livewire.home.agenda')
-                @include('livewire.home.prestasi')
-                @include('livewire.home.staff_dan_guru')
-                @include('livewire.home.jurusan')
-
-                @include('livewire.home.eskul')
-                @include('livewire.home.pengumuman')
-                @include('livewire.home.fasilitas')
-                @include('livewire.home.kegiatan')
-                @include('livewire.home.video')
-                @include('livewire.home.alumni') --}}
-                {{-- <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-1bb85a88 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="1bb85a88" data-element_type="section"
-                    data-settings='{"background_background":"classic","jet_parallax_layout_list":[{"_id":"998e88b","jet_parallax_layout_image":{"url":"","id":"","size":""},"jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'>
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6566ac74"
-                            data-id="6566ac74" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-3b4898aa elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                    data-id="3b4898aa" data-element_type="section"
-                                    data-settings='{"jet_parallax_layout_list":[{"_id":"ff9d372","jet_parallax_layout_image":{"url":"","id":"","size":""},"jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'>
-                                    <div class="elementor-container elementor-column-gap-default">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5ad6d132"
-                                            data-id="5ad6d132" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-9b6abfe elementor-widget elementor-widget-heading"
-                                                    data-id="9b6abfe" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h2 class="elementor-heading-title elementor-size-default">
-                                                            Link Terkait
-                                                        </h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <div class="elementor-element elementor-element-2b3ecb90 elementor-widget elementor-widget-jet-carousel"
-                                    data-id="2b3ecb90" data-element_type="widget"
-                                    data-settings='{"slides_to_show":"5","slides_to_show_tablet":"4","slides_to_show_mobile":"3","slides_to_scroll_mobile":"1","slides_to_scroll":"1"}'
-                                    data-widget_type="jet-carousel.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-jet-carousel jet-elements">
-                                            <div class="jet-carousel-wrap">
-                                                <div class="jet-carousel"
-                                                    data-slider_options='{"autoplaySpeed":5000,"autoplay":true,"infinite":true,"centerMode":false,"pauseOnHover":false,"speed":500,"arrows":false,"dots":true,"variableWidth":false,"prevArrow":".jet-carousel__prev-arrow-2b3ecb90","nextArrow":".jet-carousel__next-arrow-2b3ecb90","rtl":false,"fractionNav":false}'
-                                                    dir="ltr">
-                                                    <div class="elementor-slick-slider">
-                                                        <div class="jet-carousel__item">
-                                                            <div class="jet-carousel__item-inner">
-                                                                <a href="#" class="jet-carousel__item-link"><img
-                                                                        decoding="async"
-                                                                        src="wp-content/uploads/2022/03/dis.png"
-                                                                        class="jet-carousel__item-img" alt="dis"
-                                                                        loading="lazy" /></a>
-                                                                <div class="jet-carousel__content"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="jet-carousel__item">
-                                                            <div class="jet-carousel__item-inner">
-                                                                <a href="#" class="jet-carousel__item-link"><img
-                                                                        decoding="async"
-                                                                        src="wp-content/uploads/2022/03/link-bwi.png"
-                                                                        class="jet-carousel__item-img" alt="link-bwi"
-                                                                        loading="lazy" /></a>
-                                                                <div class="jet-carousel__content"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="jet-carousel__item">
-                                                            <div class="jet-carousel__item-inner">
-                                                                <a href="#" class="jet-carousel__item-link"><img
-                                                                        decoding="async"
-                                                                        src="wp-content/uploads/2022/03/link-bwi.png"
-                                                                        class="jet-carousel__item-img" alt="link-bwi"
-                                                                        loading="lazy" /></a>
-                                                                <div class="jet-carousel__content"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="jet-carousel__item">
-                                                            <div class="jet-carousel__item-inner">
-                                                                <a href="#" class="jet-carousel__item-link"><img
-                                                                        decoding="async"
-                                                                        src="wp-content/uploads/2022/03/link-bwi.png"
-                                                                        class="jet-carousel__item-img" alt="link-bwi"
-                                                                        loading="lazy" /></a>
-                                                                <div class="jet-carousel__content"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="jet-carousel__item">
-                                                            <div class="jet-carousel__item-inner">
-                                                                <a href="#" class="jet-carousel__item-link"><img
-                                                                        decoding="async"
-                                                                        src="wp-content/uploads/2022/03/link-bwi.png"
-                                                                        class="jet-carousel__item-img" alt="link-bwi"
-                                                                        loading="lazy" /></a>
-                                                                <div class="jet-carousel__content"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    @if ($title == 'Halaman Utama')
+        <main id="content" class="site-main post-63 page type-page status-publish hentry">
+            <div class="page-content">
+                <div data-elementor-type="wp-page" data-elementor-id="63" class="elementor elementor-63">
+                    <section
+                        class="elementor-section elementor-top-section elementor-element elementor-element-1507cd83 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="1507cd83" data-element_type="section"
+                        data-settings='{"jet_parallax_layout_list":[{"_id":"57ce2af","jet_parallax_layout_image":{"url":"","id":"","size":""},"jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}],"background_background":"classic"}'>
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a33e70c"
+                                data-id="5a33e70c" data-element_type="column">
+                                <div class="elementor-widget-wrap"></div>
                             </div>
                         </div>
-                    </div>
-                </section> --}}
-
+                    </section>
+                    {{ $slot }}
+                </div>
+                <div class="post-tags"></div>
             </div>
-            <div class="post-tags"></div>
-        </div>
-    </main>
+        </main>
+    @else
+        <main id="content" class="site-main post-63 page type-page status-publish hentry">
+            <div class="page-content">
+                <div data-elementor-type="wp-page" data-elementor-id="63" class="elementor elementor-63">
+                    {{ $slot }}
+                </div>
+                <div class="post-tags"></div>
+            </div>
+        </main>
+    @endif
 
-    <div data-elementor-type="footer" data-elementor-id="227" class="elementor elementor-227 elementor-location-footer">
+    <div data-elementor-type="footer" data-elementor-id="227"
+        class="elementor elementor-227 elementor-location-footer">
         <div class="elementor-section-wrap">
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-4954836a elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -449,6 +343,7 @@
     @include('layouts.menu_popup')
 
     @include('layouts.footer')
+    @livewireScripts
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Livewire\Login;
+use App\Http\Livewire\Guru;
+use App\Http\Livewire\GuruDetail;
 use App\Http\Livewire\LandingPages;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -30,6 +32,9 @@ use App\Http\Controllers\PengumumanController;
 Route::get('/', LandingPages::class)->name('index');
 Route::get('/login', Login::class)->name('login.index');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
+
+Route::get('/guru', Guru::class)->name('guruComponent');
+Route::get('/guru{id}', GuruDetail::class)->name('guruDetailComponent');
 
 Route::middleware('auth:sanctum')->group(function () {
 

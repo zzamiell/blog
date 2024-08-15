@@ -39,7 +39,8 @@
                                     data-id="6d0dbb35" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a class="elementor-icon" href="guru/index.html">
+                                            <a class="elementor-icon" href="{{ route('guruComponent') }}"
+                                                wire:navigate.hover>
                                                 <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>
