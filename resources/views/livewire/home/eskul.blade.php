@@ -39,7 +39,7 @@
                                     data-id="8557f5a" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a class="elementor-icon" href="ekstrakurikuler/index.html">
+                                            <a class="elementor-icon" href="{{ route('eskulComponent') }}">
                                                 <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>

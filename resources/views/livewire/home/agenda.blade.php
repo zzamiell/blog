@@ -39,7 +39,7 @@
                                     data-id="6744e3e6" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a class="elementor-icon" href="agenda/index.html">
+                                            <a class="elementor-icon" href="{{ route('agendaComponent') }}">
                                                 <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>

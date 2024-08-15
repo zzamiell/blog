@@ -39,7 +39,7 @@
                                     data-id="d12f432" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a class="elementor-icon" href="galeri-kegiatan/index.html">
+                                            <a class="elementor-icon" href="{{ route('kegiatanComponent') }}">
                                                 <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>

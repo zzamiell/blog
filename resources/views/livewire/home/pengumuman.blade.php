@@ -40,7 +40,7 @@
                                     data-id="35cefdc" data-element_type="widget" data-widget_type="icon.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-icon-wrapper">
-                                            <a class="elementor-icon" href="pengumuman/index.html">
+                                            <a class="elementor-icon" href="{{ route('pengumumanComponent') }}">
                                                 <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>
@@ -86,7 +86,7 @@
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-button-wrapper">
                                                                             <a class="elementor-button elementor-button-link elementor-size-xs"
-                                                                                href="pengumuman/jadwal-pondok-ramadhan/index.html">
+                                                                                href="{{ route('pengumumanComponent') }}">
                                                                                 <span
                                                                                     class="elementor-button-content-wrapper">
                                                                                     <span

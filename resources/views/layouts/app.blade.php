@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     @include('layouts.head')
-
     {{-- END TEMPLATE WP --}}
 
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
@@ -43,10 +42,6 @@
                                             <img width="333" height="87"
                                                 src="wp-content/uploads/2022/04/sch-logo.png"
                                                 class="attachment-full size-full wp-image-1216" alt=""
-                                                srcset="
-                                https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logo.png        333w,
-                                https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logo-300x78.png 300w
-                              "
                                                 sizes="(max-width: 333px) 100vw, 333px" />
                                         </div>
                                     </div>
@@ -131,8 +126,7 @@
         </main>
     @endif
 
-    <div data-elementor-type="footer" data-elementor-id="227"
-        class="elementor elementor-227 elementor-location-footer">
+    <div data-elementor-type="footer" data-elementor-id="227" class="elementor elementor-227 elementor-location-footer">
         <div class="elementor-section-wrap">
             <section
                 class="elementor-section elementor-top-section elementor-element elementor-element-4954836a elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -343,6 +337,8 @@
     @include('layouts.menu_popup')
 
     @include('layouts.footer')
+
+
     @livewireScripts
 </body>
 

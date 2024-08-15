@@ -1,9 +1,21 @@
 <?php
 
 use App\Http\Livewire\Login;
+use App\Http\Livewire\Kegiatan;
+use App\Http\Livewire\Fasilitas;
+use App\Http\Livewire\Eskul;
+use App\Http\Livewire\Jurusan;
+use App\Http\Livewire\JurusanDetail;
+use App\Http\Livewire\Prestasi;
+use App\Http\Livewire\PrestasiDetail;
+use App\Http\Livewire\Agenda;
+use App\Http\Livewire\AgendaDetail;
+use App\Http\Livewire\Berita;
+use App\Http\Livewire\BeritaDetail;
 use App\Http\Livewire\Guru;
 use App\Http\Livewire\GuruDetail;
 use App\Http\Livewire\LandingPages;
+use App\Http\Livewire\Pengumuman;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GuruController;
@@ -36,6 +48,29 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/guru', Guru::class)->name('guruComponent');
 Route::get('/guru{id}', GuruDetail::class)->name('guruDetailComponent');
 
+Route::get('/berita', Berita::class)->name('beritaComponent');
+Route::get('/berita-{id}', BeritaDetail::class)->name('beritaDetailComponent');
+
+Route::get('/agenda', Agenda::class)->name('agendaComponent');
+Route::get('/agenda-{id}', AgendaDetail::class)->name('agendaDetailComponent');
+
+Route::get('/prestasi', Prestasi::class)->name('prestasiComponent');
+Route::get('/prestasi-{id}', PrestasiDetail::class)->name('prestasiDetailComponent');
+
+Route::get('/jurusan', Jurusan::class)->name('jurusanComponent');
+Route::get('/jurusan-{id}', JurusanDetail::class)->name('jurusanDetailComponent');
+
+Route::get('/eskul', Eskul::class)->name('eskulComponent');
+// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+
+Route::get('/pengumuman', Pengumuman::class)->name('pengumumanComponent');
+// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+
+Route::get('/fasilitas', Fasilitas::class)->name('fasilitasComponent');
+// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+
+Route::get('/kegiatan', Kegiatan::class)->name('kegiatanComponent');
+// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::group(array('prefix' => 'admin'),

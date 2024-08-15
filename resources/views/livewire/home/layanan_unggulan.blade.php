@@ -78,7 +78,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="result-ppdb/index.html">
+                                                                    <a href="#" onclick="ondev()" disabled>
                                                                         <img decoding="async" width="119"
                                                                             height="119"
                                                                             src="wp-content/uploads/2022/04/ppdb.png"
@@ -92,7 +92,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="result-ppdb/index.html"
+                                                                        <a href="#" onclick="ondev()" disabled
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">PPDB</span></a>
                                                                     </div>
@@ -436,3 +436,13 @@
         </div>
     </div>
 </section>
+
+<script>
+    function ondev() {
+        Swal.fire({
+            icon: 'error',
+            title: '',
+            text: 'fitur sedang dalam pengembangan.',
+        });
+    }
+</script>
