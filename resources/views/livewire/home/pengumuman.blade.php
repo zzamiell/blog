@@ -106,7 +106,7 @@
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
                                                                         <a
-                                                                            href="pengumuman/jadwal-pondok-ramadhan/index.html">
+                                                                            href="{{ route('pengumumanDetailComponent', $item->slug) }}">
                                                                             <img width="640" height="424"
                                                                                 src="{{ asset($item->thumbnail) }}"
                                                                                 class="attachment-full size-full wp-image-1207"

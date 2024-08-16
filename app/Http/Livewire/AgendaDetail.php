@@ -13,6 +13,7 @@ class AgendaDetail extends Component
     public $users;
     protected $agenda;
     protected $berita;
+    protected $sekolah;
     public $slug;
 
     #[Layout('layouts.app')]
@@ -25,6 +26,7 @@ class AgendaDetail extends Component
         ->select('agenda.*','creator.fullname as creator','koordinator.fullname as koordinator','koordinator.email as kemail','koordinator.phone as kphone')
         ->where('slug', $this->slug)->first();
         $this->berita = DB::table('pengumuman')->latest('id')->take(10)->get();
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function render()
@@ -32,9 +34,11 @@ class AgendaDetail extends Component
 
         return view('livewire.agendadetail',[
             'agenda' =>  $this->agenda,
-            'pengumuman' =>  $this->berita
-        ])->layoutData([
-            'title' => $this->title,
+            'pengumuman' =>  $this->berita,
+            'sekolah' =>  $this->sekolah
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah
         ]);
     }
 }

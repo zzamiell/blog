@@ -94,7 +94,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="{{ route('fasilitas.store.galeri', $id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('kegiatan.store.galeri', $id) }}" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group" id="errorMsgupdate">
                             {{-- field untuk error message --}}

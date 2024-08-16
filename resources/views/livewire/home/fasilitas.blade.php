@@ -77,7 +77,8 @@
                                                                     data-id="ac610b5" data-element_type="widget"
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <a href="fasilitas/bengkel-sekolah/index.html">
+                                                                        <a
+                                                                            href="{{ route('fasilitasDetailComponent', $item->slug) }}">
                                                                             <img width="640" height="426"
                                                                                 src="{{ $item->thumbnail }}"
                                                                                 class="attachment-full size-full wp-image-1210"

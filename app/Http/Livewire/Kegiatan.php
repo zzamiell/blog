@@ -16,6 +16,7 @@ class Kegiatan extends Component
     protected $paginationTheme = 'bootstrap';
     public $perPage = 10;
     protected $kegiatan = [];
+    protected $sekolah;
     public $search = '';
 
     #[Layout('layouts.app')]
@@ -23,6 +24,7 @@ class Kegiatan extends Component
     public function updatingSearch()
     {
         $this->kegiatan = DB::table('kegiatan')->where('judul', 'like', '%' . $this->search . '%')->paginate($this->perPage);
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function mount(){
@@ -32,9 +34,11 @@ class Kegiatan extends Component
     public function render()
     {
         return view('livewire.kegiatan',[
-            'kegiatan' =>  $this->kegiatan
-        ])->layoutData([
-            'title' => $this->title,
+            'kegiatan' =>  $this->kegiatan,
+            'sekolah' =>  $this->sekolah
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah
         ]);
     }
 }

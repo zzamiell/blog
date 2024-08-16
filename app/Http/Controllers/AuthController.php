@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
+
+    public function portal_login(){
+        $data['data'] = DB::table('sekolah')->where('id',1)->first();
+        return view('livewire.login',$data);
+    }
+
     public function login(Request $request){
         $credentials = $request->only('email', 'password');
         $validator = Validator::make(

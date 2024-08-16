@@ -5,8 +5,11 @@ use App\Http\Livewire\VisiMisi;
 use App\Http\Livewire\Sambutan;
 use App\Http\Livewire\Download;
 use App\Http\Livewire\Kegiatan;
+use App\Http\Livewire\KegiatanDetail;
 use App\Http\Livewire\Fasilitas;
+use App\Http\Livewire\FasilitasDetail;
 use App\Http\Livewire\Eskul;
+use App\Http\Livewire\EskulDetail;
 use App\Http\Livewire\Jurusan;
 use App\Http\Livewire\JurusanDetail;
 use App\Http\Livewire\Prestasi;
@@ -19,6 +22,7 @@ use App\Http\Livewire\Guru;
 use App\Http\Livewire\GuruDetail;
 use App\Http\Livewire\LandingPages;
 use App\Http\Livewire\Pengumuman;
+use App\Http\Livewire\PengumumanDetail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GuruController;
@@ -51,7 +55,7 @@ Route::get('/visi-misi', VisiMisi::class)->name('visimisiComponent');
 Route::get('/sambutan', Sambutan::class)->name('sambutanComponent');
 Route::get('/donwload', Download::class)->name('downloadComponent');
 
-Route::get('/login', Login::class)->name('login.index');
+Route::get('/portal-login', [AuthController::class, 'portal_login'])->name('login.index');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 
 Route::get('/guru', Guru::class)->name('guruComponent');
@@ -70,16 +74,16 @@ Route::get('/jurusan', Jurusan::class)->name('jurusanComponent');
 Route::get('/jurusan-{id}', JurusanDetail::class)->name('jurusanDetailComponent');
 
 Route::get('/eskul', Eskul::class)->name('eskulComponent');
-// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
 
 Route::get('/pengumuman', Pengumuman::class)->name('pengumumanComponent');
-// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+Route::get('/pengumuman-{id}', PengumumanDetail::class)->name('pengumumanDetailComponent');
 
 Route::get('/fasilitas', Fasilitas::class)->name('fasilitasComponent');
-// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+Route::get('/fasilitas-{id}', FasilitasDetail::class)->name('fasilitasDetailComponent');
 
 Route::get('/kegiatan', Kegiatan::class)->name('kegiatanComponent');
-// Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+Route::get('/kegiatan-{id}', KegiatanDetail::class)->name('kegiatanDetailComponent');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware('auth:sanctum')->group(function () {
 

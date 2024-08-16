@@ -665,7 +665,7 @@
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-button-wrapper">
                                                     <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                        href="{{ route('login') }}" wire:navigate.hover>
+                                                        href="{{ route('login.index') }}" wire:navigate.hover>
                                                         <span class="elementor-button-content-wrapper">
                                                             <span
                                                                 class="elementor-button-icon elementor-align-icon-right">

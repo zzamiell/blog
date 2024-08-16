@@ -115,7 +115,7 @@
                                                                             data-widget_type="image.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <a
-                                                                                    href="jadwal-pondok-ramadhan/index.html">
+                                                                                    href="{{ route('pengumumanDetailComponent', $item->slug) }}">
                                                                                     <img fetchpriority="high"
                                                                                         decoding="async" width="640"
                                                                                         height="424"

@@ -16,6 +16,7 @@ class Eskul extends Component
     protected $paginationTheme = 'bootstrap';
     public $perPage = 10;
     protected $feed = [];
+    protected $sekolah;
     public $search = '';
 
     #[Layout('layouts.app')]
@@ -23,6 +24,7 @@ class Eskul extends Component
     public function updatingSearch()
     {
         $this->feed = DB::table('eskul')->where('judul', 'like', '%' . $this->search . '%')->paginate($this->perPage);
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function mount(){
@@ -32,9 +34,11 @@ class Eskul extends Component
     public function render()
     {
         return view('livewire.eskul',[
-            'feed' =>  $this->feed
-        ])->layoutData([
-            'title' => $this->title,
+            'feed' =>  $this->feed,
+            'sekolah' =>  $this->sekolah
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah
         ]);
     }
 }

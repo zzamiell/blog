@@ -87,7 +87,8 @@
                                                                             data-id="a493808" data-element_type="widget"
                                                                             data-widget_type="image.default">
                                                                             <div class="elementor-widget-container">
-                                                                                <a href="seni-musik/index.html">
+                                                                                <a
+                                                                                    href="{{ route('eskulDetailComponent', $item->slug) }}">
                                                                                     <img width="640" height="426"
                                                                                         src="{{ asset($item->thumbnail) }}"
                                                                                         alt="{{ $item->judul }}"> </a>

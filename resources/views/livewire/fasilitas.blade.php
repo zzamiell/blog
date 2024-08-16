@@ -101,7 +101,7 @@
                                                                                         <div
                                                                                             class="elementor-widget-container">
                                                                                             <a
-                                                                                                href="bengkel-sekolah/index.html">
+                                                                                                href="{{ route('fasilitasDetailComponent', $item->slug) }}">
                                                                                                 <img width="640"
                                                                                                     height="426"
                                                                                                     src="{{ asset($item->thumbnail) }}"

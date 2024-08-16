@@ -91,7 +91,7 @@ class KegiatanController extends Controller
 
         $data = $request->except('_token','thumbnail');
         $data['thumbnail'] = $filename;
-        $data['fasilitasId'] = $id;
+        $data['kegiatanId'] = $id;
 
         DB::table('kegiatan_galeri')->insert($data);
 

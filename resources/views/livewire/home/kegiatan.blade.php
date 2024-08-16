@@ -82,7 +82,7 @@
                                                                 <div class="elementor-widget-container">
                                                                     <div class="elementor-button-wrapper">
                                                                         <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                                            href="galeri/robotic-roboto-uraaaa/index.html">
+                                                                            href="{{ route('kegiatanDetailComponent', $item->slug) }}">
                                                                             <span
                                                                                 class="elementor-button-content-wrapper">
                                                                                 <span
@@ -101,7 +101,8 @@
                                                                 data-id="20e18fc" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="galeri/robotic-roboto-uraaaa/index.html">
+                                                                    <a
+                                                                        href="{{ route('kegiatanDetailComponent', $item->slug) }}">
                                                                         <img width="640" height="426"
                                                                             src="{{ $item->thumbnail }}"
                                                                             class="attachment-full size-full wp-image-1203"
