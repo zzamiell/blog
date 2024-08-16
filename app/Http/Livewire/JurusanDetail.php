@@ -14,6 +14,7 @@ class JurusanDetail extends Component
     protected $jurusan;
     protected $berita;
     protected $galeri;
+    protected $sekolah;
     public $slug;
 
     #[Layout('layouts.app')]
@@ -30,6 +31,8 @@ class JurusanDetail extends Component
         ->where('jurusanId', $this->jurusan->id)
         ->get();
 
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
+
     }
 
     public function render()
@@ -38,9 +41,11 @@ class JurusanDetail extends Component
         return view('livewire.jurusandetail',[
             'jurusan' =>  $this->jurusan,
             'pengumuman' =>  $this->berita,
-            'galeri' =>  $this->galeri
-        ])->layoutData([
-            'title' => $this->title,
+            'galeri' =>  $this->galeri,
+            'sekolah' =>  $this->sekolah
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah
         ]);
     }
 }

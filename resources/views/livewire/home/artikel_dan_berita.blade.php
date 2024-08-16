@@ -88,7 +88,8 @@
                                                                     data-id="b1c7cf7" data-element_type="widget"
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <a href="#">
+                                                                        <a
+                                                                            href="{{ route('beritaDetailComponent', $item->slug) }}">
                                                                             <img width="450" height="426"
                                                                                 src="{{ asset($item->thumbnail) }}"
                                                                                 title="{{ $item->judul }}"

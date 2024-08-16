@@ -86,7 +86,8 @@
                                                                     data-id="be04952" data-element_type="widget"
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <a href="#">
+                                                                        <a
+                                                                            href="{{ route('prestasiDetailComponent', $item->slug) }}">
                                                                             <img width="640" height="426"
                                                                                 src="{{ asset($item->thumbnail) }}"
                                                                                 class="attachment-full size-full wp-image-1204"
@@ -130,150 +131,7 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                    {{-- <div class="jet-listing-grid__item jet-listing-dynamic-post-769"
-                                        data-post-id="769">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-769 .elementor-element.elementor-element-5508ab8 .jet-listing-dynamic-terms__link {
-                                                background-color: #3f95a1;
-                                            }
 
-                                            .jet-listing-dynamic-post-769 .elementor-element.elementor-element-5508ab8 .jet-listing-dynamic-terms__link:hover {
-                                                background-color: #ffa800;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="18"
-                                            class="elementor elementor-18">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-9f77703 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="9f77703" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[{"jet_parallax_layout_image":{"url":"","id":"","size":""},"_id":"fb4688d","jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'>
-                                                <div class="elementor-container elementor-column-gap-default">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b46c664"
-                                                        data-id="b46c664" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-be04952 elementor-widget elementor-widget-image"
-                                                                data-id="be04952" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="prestasi/juara-1-basket-ball/index.html">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="640" height="426"
-                                                                            src="wp-content/uploads/2022/04/lach.jpg"
-                                                                            class="attachment-full size-full wp-image-1208"
-                                                                            alt=""
-                                                                            srcset="
-                                                  https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/lach.jpg         640w,
-                                                  https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/lach-300x200.jpg 300w
-                                                "
-                                                                            sizes="(max-width: 640px) 100vw, 640px" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-5508ab8 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-jet-listing-dynamic-terms"
-                                                                data-id="5508ab8" data-element_type="widget"
-                                                                data-settings='{"_position":"absolute"}'
-                                                                data-widget_type="jet-listing-dynamic-terms.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-terms">
-                                                                        <span
-                                                                            class="jet-listing-dynamic-terms__link">Sekolah</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-1cc425b elementor-widget elementor-widget-jet-listing-dynamic-field"
-                                                                data-id="1cc425b" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-field.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div
-                                                                        class="jet-listing jet-listing-dynamic-field display-inline">
-                                                                        <div
-                                                                            class="jet-listing-dynamic-field__inline-wrap">
-                                                                            <div
-                                                                                class="jet-listing-dynamic-field__content">
-                                                                                Juara 1 Basket Ball
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-768"
-                                        data-post-id="768">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-768 .elementor-element.elementor-element-5508ab8 .jet-listing-dynamic-terms__link {
-                                                background-color: #3f95a1;
-                                            }
-
-                                            .jet-listing-dynamic-post-768 .elementor-element.elementor-element-5508ab8 .jet-listing-dynamic-terms__link:hover {
-                                                background-color: #ffa800;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="18"
-                                            class="elementor elementor-18">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-9f77703 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="9f77703" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[{"jet_parallax_layout_image":{"url":"","id":"","size":""},"_id":"fb4688d","jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'>
-                                                <div class="elementor-container elementor-column-gap-default">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b46c664"
-                                                        data-id="b46c664" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-be04952 elementor-widget elementor-widget-image"
-                                                                data-id="be04952" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="prestasi/juara-1-lomba-design/index.html">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="640" height="426"
-                                                                            src="wp-content/uploads/2022/04/robto.jpg"
-                                                                            class="attachment-full size-full wp-image-1203"
-                                                                            alt=""
-                                                                            srcset="
-                                                  https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/robto.jpg         640w,
-                                                  https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/robto-300x200.jpg 300w
-                                                "
-                                                                            sizes="(max-width: 640px) 100vw, 640px" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-5508ab8 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-jet-listing-dynamic-terms"
-                                                                data-id="5508ab8" data-element_type="widget"
-                                                                data-settings='{"_position":"absolute"}'
-                                                                data-widget_type="jet-listing-dynamic-terms.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-terms">
-                                                                        <span
-                                                                            class="jet-listing-dynamic-terms__link">Siswa</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-1cc425b elementor-widget elementor-widget-jet-listing-dynamic-field"
-                                                                data-id="1cc425b" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-field.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div
-                                                                        class="jet-listing jet-listing-dynamic-field display-inline">
-                                                                        <div
-                                                                            class="jet-listing-dynamic-field__inline-wrap">
-                                                                            <div
-                                                                                class="jet-listing-dynamic-field__content">
-                                                                                Juara 1 Lomba Design
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div> --}}
                                 </div>
                             </div>
                         </div>

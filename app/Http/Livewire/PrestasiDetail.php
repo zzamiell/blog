@@ -13,6 +13,7 @@ class PrestasiDetail extends Component
     public $users;
     protected $prestasi;
     protected $berita;
+    protected $sekolah;
     public $slug;
 
     #[Layout('layouts.app')]
@@ -25,6 +26,7 @@ class PrestasiDetail extends Component
         ->first();
 
         $this->berita = DB::table('pengumuman')->latest('id')->take(10)->get();
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function render()
@@ -32,9 +34,11 @@ class PrestasiDetail extends Component
 
         return view('livewire.prestasidetail',[
             'prestasi' =>  $this->prestasi,
-            'pengumuman' =>  $this->berita
-        ])->layoutData([
-            'title' => $this->title,
+            'pengumuman' =>  $this->berita,
+            'sekolah' =>  $this->sekolah
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah
         ]);
     }
 }
