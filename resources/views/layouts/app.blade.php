@@ -138,7 +138,7 @@
                             <div class="elementor-element elementor-element-f5c1b9 elementor-widget elementor-widget-image"
                                 data-id="f5c1b9" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <a href="index.html">
+                                    <a href="{{ route('index') }}">
                                         <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                             class="attachment-full size-full wp-image-1216" alt=""
                                             sizes="(max-width: 333px) 100vw, 333px" />
@@ -207,31 +207,31 @@
                                             <div class="jet-nav jet-nav--vertical jet-nav--vertical-sub-right-side">
                                                 <div
                                                     class="menu-item menu-item-type-post_type menu-item-object-page jet-nav__item-558 jet-nav__item">
-                                                    <a href="agenda/index.html"
+                                                    <a href="{{ route('agendaComponent') }}"
                                                         class="menu-item-link menu-item-link-depth-0 menu-item-link-top"><span
                                                             class="jet-nav-link-text">Agenda</span></a>
                                                 </div>
                                                 <div
                                                     class="menu-item menu-item-type-post_type menu-item-object-page jet-nav__item-559 jet-nav__item">
-                                                    <a href="artikel/index.html"
+                                                    <a href="{{ route('beritaComponent') }}"
                                                         class="menu-item-link menu-item-link-depth-0 menu-item-link-top"><span
                                                             class="jet-nav-link-text">Artikel</span></a>
                                                 </div>
                                                 <div
                                                     class="menu-item menu-item-type-post_type menu-item-object-page jet-nav__item-560 jet-nav__item">
-                                                    <a href="ekstrakurikuler/index.html"
+                                                    <a href="{{ route('eskulComponent') }}"
                                                         class="menu-item-link menu-item-link-depth-0 menu-item-link-top"><span
                                                             class="jet-nav-link-text">Ekstrakurikuler</span></a>
                                                 </div>
                                                 <div
                                                     class="menu-item menu-item-type-post_type menu-item-object-page jet-nav__item-561 jet-nav__item">
-                                                    <a href="pengumuman/index.html"
+                                                    <a href="{{ route('pengumumanComponent') }}"
                                                         class="menu-item-link menu-item-link-depth-0 menu-item-link-top"><span
                                                             class="jet-nav-link-text">Pengumuman</span></a>
                                                 </div>
                                                 <div
                                                     class="menu-item menu-item-type-post_type menu-item-object-page jet-nav__item-562 jet-nav__item">
-                                                    <a href="prestasi/index.html"
+                                                    <a href="{{ route('prestasiComponent') }}"
                                                         class="menu-item-link menu-item-link-depth-0 menu-item-link-top"><span
                                                             class="jet-nav-link-text">Prestasi</span></a>
                                                 </div>

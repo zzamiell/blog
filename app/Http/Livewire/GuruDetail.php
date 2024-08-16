@@ -15,6 +15,7 @@ class GuruDetail extends Component
     public $agenda;
     public $pengumuman;
     public $userId;
+    protected $sekolah;
 
     #[Layout('layouts.app')]
 
@@ -24,14 +25,17 @@ class GuruDetail extends Component
         $this->artikel = DB::table('artikel')->latest('id')->take(3)->get();
         $this->agenda = DB::table('agenda')->latest('id')->take(3)->get();
         $this->pengumuman = DB::table('pengumuman')->latest('id')->take(3)->get();
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function render()
     {
         return view('livewire.gurudetail',[
-            'users' =>  $this->users
-        ])->layoutData([
-            'title' => $this->title,
+            'users' =>  $this->users,
+            'sekolah' =>  $this->sekolah,
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' =>  $this->sekolah,
         ]);
     }
 }

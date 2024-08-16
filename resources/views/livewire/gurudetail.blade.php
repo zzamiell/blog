@@ -826,7 +826,7 @@
                                                                                                         <div
                                                                                                             class="elementor-widget-container">
                                                                                                             <a
-                                                                                                                href="../../coba/index.html">
+                                                                                                                href="{{ route('beritaDetailComponent', $item->slug) }}">
                                                                                                                 <img width="450"
                                                                                                                     height="426"
                                                                                                                     src="{{ asset($item->thumbnail) }}"
@@ -1007,7 +1007,7 @@
                                                                                                         <div
                                                                                                             class="elementor-widget-container">
                                                                                                             <a
-                                                                                                                href="../../agenda/gghhhgg/index.html">
+                                                                                                                href="{{route('agendaDetailComponent', $item->slug)}}">
                                                                                                                 <img width="450"
                                                                                                                     height="426"
                                                                                                                     src="{{ $item->thumbnail }}"
@@ -1161,7 +1161,7 @@
                                                                                                             <div
                                                                                                                 class="elementor-button-wrapper">
                                                                                                                 <a class="elementor-button elementor-button-link elementor-size-xs"
-                                                                                                                    href="pengumuman/jadwal-pondok-ramadhan/index.html">
+                                                                                                                    href="{{route('pengumumanDetailComponent', $item->slug)}}">
                                                                                                                     <span
                                                                                                                         class="elementor-button-content-wrapper">
                                                                                                                         <span
@@ -1183,7 +1183,7 @@
                                                                                                         <div
                                                                                                             class="elementor-widget-container">
                                                                                                             <a
-                                                                                                                href="pengumuman/jadwal-pondok-ramadhan/index.html">
+                                                                                                                href="{{route('pengumumanDetailComponent', $item->slug)}}">
                                                                                                                 <img width="640"
                                                                                                                     height="424"
                                                                                                                     src="{{ asset($item->thumbnail) }}"
