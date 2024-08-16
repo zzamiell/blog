@@ -40,6 +40,9 @@
     @include('livewire.home.pengumuman')
     @include('livewire.home.fasilitas')
     @include('livewire.home.kegiatan')
+    <div style="margin-bottom: 20%">
+
+    </div>
     {{-- @include('livewire.home.video')
     @include('livewire.home.alumni') --}}
 </div>

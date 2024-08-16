@@ -21,13 +21,14 @@
                                             data-widget_type="icon-list.default">
                                             <div class="elementor-widget-container">
                                                 <link rel="stylesheet"
-                                                    href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css" />
+                                                    href="{{ asset('wp-content/plugins/elementor/assets/css/widget-icon-list.min.css') }}" />
                                                 <ul class="elementor-icon-list-items elementor-inline-items">
                                                     <li class="elementor-icon-list-item elementor-inline-item">
                                                         <span class="elementor-icon-list-icon">
                                                             <i aria-hidden="true" class="fas fa-phone"></i>
                                                         </span>
-                                                        <span class="elementor-icon-list-text">082233000884</span>
+                                                        <span
+                                                            class="elementor-icon-list-text">{{ $sekolah->phone }}</span>
                                                     </li>
                                                     <li class="elementor-icon-list-item elementor-inline-item">
                                                         <a href="#">
@@ -35,7 +36,7 @@
                                                                 <i aria-hidden="true" class="fas fa-envelope"></i>
                                                             </span>
                                                             <span
-                                                                class="elementor-icon-list-text">contact.flymotion@gmail.com</span>
+                                                                class="elementor-icon-list-text">{{ $sekolah->email }}</span>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -431,11 +432,11 @@
                                                         display: inline-block;
                                                     }
                                                 </style>
+
                                                 <a href="{{ route('index') }}">
-                                                    <img width="333" height="87"
-                                                        src="wp-content/uploads/2022/04/sch-logo.png"
-                                                        class="attachment-full size-full wp-image-1216" alt=""
-                                                        sizes="(max-width: 333px) 100vw, 333px" />
+                                                    <img width="100" height="87" src="{{ asset($sekolah->logo) }}"
+                                                        class="attachment-full size-full wp-image-1216 img-fluid"
+                                                        alt="" sizes="(max-width: 333px) 100vw, 333px" />
                                                 </a>
                                             </div>
                                         </div>
@@ -450,7 +451,7 @@
                                             data-widget_type="nav-menu.default">
                                             <div class="elementor-widget-container">
                                                 <link rel="stylesheet"
-                                                    href="wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css" />
+                                                    href="{{ asset('wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css') }}" />
                                                 <nav migration_allowed="1" migrated="0" role="navigation"
                                                     class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                                     <ul id="menu-1-26d699f9" class="elementor-nav-menu">
@@ -481,13 +482,13 @@
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549">
-                                                                    <a href="sambutan-kepala-sekolah/index.html"
+                                                                    <a href="{{ route('sambutanComponent') }}"
                                                                         class="elementor-sub-item">Sambutan Kepala
                                                                         Sekolah</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
-                                                                    <a href="visi-dan-misi/index.html"
+                                                                    <a href="{{ route('visimisiComponent') }}"
                                                                         class="elementor-sub-item">Visi dan Misi</a>
                                                                 </li>
                                                             </ul>
@@ -566,7 +567,7 @@
                                                     <ul id="menu-2-26d699f9" class="elementor-nav-menu">
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-544">
-                                                            <a href="index.html" aria-current="page"
+                                                            <a href="{{ route('index') }}" aria-current="page"
                                                                 class="elementor-item elementor-item-active"
                                                                 tabindex="-1">Beranda</a>
                                                         </li>
@@ -578,31 +579,31 @@
                                                             <ul class="sub-menu elementor-nav-menu--dropdown">
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-546">
-                                                                    <a href="ekstrakurikuler/index.html"
+                                                                    <a href="{{ route('eskulComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Ekstrakurikuler</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547">
-                                                                    <a href="fasilitas/index.html"
+                                                                    <a href="{{ route('fasilitasComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Fasilitas</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548">
-                                                                    <a href="guru/index.html"
+                                                                    <a href="{{ route('guruComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Guru</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549">
-                                                                    <a href="sambutan-kepala-sekolah/index.html"
+                                                                    <a href="{{ route('sambutanComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Sambutan Kepala Sekolah</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
-                                                                    <a href="visi-dan-misi/index.html"
+                                                                    <a href="{{ route('visimisiComponent') }}"
                                                                         class="elementor-sub-item" tabindex="-1">Visi
                                                                         dan Misi</a>
                                                                 </li>
@@ -610,8 +611,8 @@
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
-                                                            <a href="artikel/index.html" class="elementor-item"
-                                                                tabindex="-1">Artikel</a>
+                                                            <a href="{{ route('beritaComponent') }}"
+                                                                class="elementor-item" tabindex="-1">Artikel</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-552">
@@ -621,59 +622,33 @@
                                                             <ul class="sub-menu elementor-nav-menu--dropdown">
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
-                                                                    <a href="agenda/index.html"
+                                                                    <a href="{{ route('agendaComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Agenda</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554">
-                                                                    <a href="pengumuman/index.html"
+                                                                    <a href="{{ route('pengumumanComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Pengumuman</a>
                                                                 </li>
                                                                 <li
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555">
-                                                                    <a href="prestasi/index.html"
+                                                                    <a href="{{ route('prestasiComponent') }}"
                                                                         class="elementor-sub-item"
                                                                         tabindex="-1">Prestasi</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li
+                                                        {{-- <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556">
                                                             <a href="result-ppdb/index.html" class="elementor-item"
                                                                 tabindex="-1">Result PPDB</a>
-                                                        </li>
+                                                        </li> --}}
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-557">
                                                             <a href="kontak/index.html" class="elementor-item"
                                                                 tabindex="-1">Kontak</a>
-                                                        </li>
-                                                        <li
-                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-811">
-                                                            <a href="#"
-                                                                class="elementor-item elementor-item-anchor"
-                                                                tabindex="-1">Template</a>
-                                                            <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                                <li
-                                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-812">
-                                                                    <a href="https://desa.flymotion.my.id/"
-                                                                        class="elementor-sub-item"
-                                                                        tabindex="-1">CrocoDesa</a>
-                                                                </li>
-                                                                <li
-                                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-813">
-                                                                    <a href="https://liburanyuk.flymotion.my.id/"
-                                                                        class="elementor-sub-item"
-                                                                        tabindex="-1">Travel</a>
-                                                                </li>
-                                                                <li
-                                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-814">
-                                                                    <a href="https://creayoon.flymotion.my.id/"
-                                                                        class="elementor-sub-item"
-                                                                        tabindex="-1">Creayoon School</a>
-                                                                </li>
-                                                            </ul>
                                                         </li>
                                                     </ul>
                                                 </nav>

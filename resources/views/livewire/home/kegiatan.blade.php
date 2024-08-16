@@ -26,7 +26,7 @@
                                     data-id="112c757" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Galeri Kegiatan Sekolah Crocoblock
+                                            Galeri Kegiatan Sekolah {{ $sekolah->nama_sekolah }}
                                         </h2>
                                     </div>
                                 </div>

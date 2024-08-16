@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Livewire\Login;
+use App\Http\Livewire\VisiMisi;
+use App\Http\Livewire\Sambutan;
+use App\Http\Livewire\Download;
 use App\Http\Livewire\Kegiatan;
 use App\Http\Livewire\Fasilitas;
 use App\Http\Livewire\Eskul;
@@ -29,6 +32,7 @@ use App\Http\Controllers\JurusanController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\PengaturanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +46,11 @@ use App\Http\Controllers\PengumumanController;
 */
 
 Route::get('/', LandingPages::class)->name('index');
+
+Route::get('/visi-misi', VisiMisi::class)->name('visimisiComponent');
+Route::get('/sambutan', Sambutan::class)->name('sambutanComponent');
+Route::get('/donwload', Download::class)->name('downloadComponent');
+
 Route::get('/login', Login::class)->name('login.index');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 
@@ -71,6 +80,7 @@ Route::get('/fasilitas', Fasilitas::class)->name('fasilitasComponent');
 
 Route::get('/kegiatan', Kegiatan::class)->name('kegiatanComponent');
 // Route::get('/eskul-{id}', EskulDetail::class)->name('eskulDetailComponent');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware('auth:sanctum')->group(function () {
 
     Route::group(array('prefix' => 'admin'),
@@ -148,6 +158,14 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/pengumuman/update/{id}', [PengumumanController::class, 'update'])->name('pengumuman.update');
         Route::delete('/pengumuman/destroy/{id}', [PengumumanController::class, 'destroy'])->name('pengumuman.destroy');
 
+        Route::get('/pengaturan', [PengaturanController::class, 'index'])->name('pengaturan.index');
+        Route::post('/pengaturan', [PengaturanController::class, 'update'])->name('pengaturan.update');
+        Route::post('/pengaturan-profile', [PengaturanController::class, 'update_profile'])->name('pengaturan.updateprofile');
+        Route::post('/pengaturan-profile-visi-misi', [PengaturanController::class, 'update_visi_misi'])->name('pengaturan.update.visimisi');
+        Route::post('/pengaturan-banner', [PengaturanController::class, 'store_banner'])->name('pengaturan.store.banner');
+        Route::delete('/pengaturan-banner-destroy/{id}', [PengaturanController::class, 'destroy_banner'])->name('pengaturan.banner.destroy');
+        Route::delete('/pengaturan-lampiran-destroy/{id}', [PengaturanController::class, 'destroy_lampiran'])->name('pengaturan.lampiran.destroy');
+        Route::post('/pengaturan-upload-lampiran', [PengaturanController::class, 'store_lampiran'])->name('pengaturan.store.file');
     }
 );
 

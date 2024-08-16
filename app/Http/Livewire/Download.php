@@ -4,26 +4,25 @@ namespace App\Http\Livewire;
 
 use App\Models\User;
 use Livewire\WithPagination;
-use Illuminate\Support\Facades\DB;
 
 use Livewire\Component;
+use Illuminate\Support\Facades\DB;
 
-class Berita extends Component
+class Download extends Component
 {
     use WithPagination;
 
-    public $title = 'Semua Artikel & Berita';
+    public $title = 'DOnwload Materi Sekolah';
     protected $paginationTheme = 'bootstrap';
     public $perPage = 10;
-    protected $feed = [];
+    protected $donwload;
     protected $sekolah;
-    public $search = '';
 
     #[Layout('layouts.app')]
 
     public function updatingSearch()
     {
-        $this->feed = DB::table('artikel')->where('judul', 'like', '%' . $this->search . '%')->paginate($this->perPage);
+        $this->download = DB::table('sekolah_lampiran')->where('sekolahId',1)->get();
         $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
@@ -33,12 +32,14 @@ class Berita extends Component
 
     public function render()
     {
-        return view('livewire.berita',[
-            'feed' =>  $this->feed,
+
+        return view('livewire.download',[
+            'data' =>  $this->download,
             'sekolah' => $this->sekolah
-        ])->layoutData([
-            'title' => $this->title,
-            'sekolah' => $this->sekolah
+
+            ])->layoutData([
+                'title' => $this->title,
+                'sekolah' => $this->sekolah
         ]);
     }
 }

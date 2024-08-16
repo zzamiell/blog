@@ -51,12 +51,8 @@
                             data-id="2a2b8ce2" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <a href="index.html">
-                                    <img width="333" height="87" src="wp-content/uploads/2022/04/sch-logom.png"
+                                    <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                         class="attachment-full size-full wp-image-1215" alt=""
-                                        srcset="
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom.png        333w,
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom-300x78.png 300w
-                      "
                                         sizes="(max-width: 333px) 100vw, 333px" />
                                 </a>
                             </div>
@@ -541,12 +537,8 @@
                             data-id="31052ad6" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <a href="index.html">
-                                    <img width="333" height="87" src="wp-content/uploads/2022/04/sch-logom.png"
+                                    <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                         class="attachment-full size-full wp-image-1215" alt=""
-                                        srcset="
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom.png        333w,
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom-300x78.png 300w
-                      "
                                         sizes="(max-width: 333px) 100vw, 333px" />
                                 </a>
                             </div>
@@ -592,7 +584,7 @@
                                                             class="jet-headline__label">Hubungi kami di :
                                                         </span></span><span
                                                         class="jet-headline__part jet-headline__second"><span
-                                                            class="jet-headline__label">082233000884</span></span>
+                                                            class="jet-headline__label">{{ $sekolah->phone }}</span></span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -629,8 +621,7 @@
                                             data-widget_type="icon.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-icon-wrapper">
-                                                    <a class="elementor-icon"
-                                                        href="mailto:contact.flymotion@gmail.com">
+                                                    <a class="elementor-icon" href="mailto:{{ $sekolah->email }}">
                                                         <i aria-hidden="true" class="fas fa-mail-bulk"></i>
                                                     </a>
                                                 </div>
@@ -648,9 +639,10 @@
                                                 <h2 class="jet-headline jet-headline--direction-horizontal">
                                                     <span class="jet-headline__part jet-headline__first"><span
                                                             class="jet-headline__label">Kirim email ke
-                                                            kami</span></span><span
+                                                            kami </span></span><span
                                                         class="jet-headline__part jet-headline__second"><span
-                                                            class="jet-headline__label">contact.flymotion@gmail.com</span></span>
+                                                            class="jet-headline__label">
+                                                            {{ $sekolah->email }}</span></span>
                                                 </h2>
                                             </div>
                                         </div>
@@ -664,8 +656,7 @@
                                             data-widget_type="icon.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-icon-wrapper">
-                                                    <a class="elementor-icon"
-                                                        href="mailto:contact.flymotion@gmail.com">
+                                                    <a class="elementor-icon" href="mailto:{{ $sekolah->email }}">
                                                         <i aria-hidden="true" class="fas fa-angle-right"></i>
                                                     </a>
                                                 </div>
@@ -688,7 +679,8 @@
                                             data-widget_type="icon.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-icon-wrapper">
-                                                    <a class="elementor-icon" href="kontak/index.html">
+                                                    <a class="elementor-icon"
+                                                        href="https://wa.me/{{ $sekolah->phone }}">
                                                         <i aria-hidden="true" class="fab fa-whatsapp"></i>
                                                     </a>
                                                 </div>
@@ -704,7 +696,8 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h2 class="elementor-heading-title elementor-size-default">
-                                                    <a href="kontak/index.html">Kirim form pertanyaan melalui
+                                                    <a href="https://wa.me/{{ $sekolah->phone }}">Kirim form pertanyaan
+                                                        melalui
                                                         WhatsApp</a>
                                                 </h2>
                                             </div>
@@ -719,7 +712,8 @@
                                             data-widget_type="icon.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-icon-wrapper">
-                                                    <a class="elementor-icon" href="kontak/index.html">
+                                                    <a class="elementor-icon"
+                                                        href="https://wa.me/{{ $sekolah->phone }}">
                                                         <i aria-hidden="true" class="fas fa-angle-right"></i>
                                                     </a>
                                                 </div>
@@ -729,7 +723,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section
+                        {{-- <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-7e4f36 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="7e4f36" data-element_type="section"
                             data-settings='{"jet_parallax_layout_list":[{"_id":"26e1e7f","jet_parallax_layout_image":{"url":"","id":"","size":""},"jet_parallax_layout_image_tablet":{"url":"","id":"","size":""},"jet_parallax_layout_image_mobile":{"url":"","id":"","size":""},"jet_parallax_layout_speed":{"unit":"%","size":50,"sizes":[]},"jet_parallax_layout_type":"scroll","jet_parallax_layout_direction":null,"jet_parallax_layout_fx_direction":null,"jet_parallax_layout_z_index":"","jet_parallax_layout_bg_x":50,"jet_parallax_layout_bg_x_tablet":"","jet_parallax_layout_bg_x_mobile":"","jet_parallax_layout_bg_y":50,"jet_parallax_layout_bg_y_tablet":"","jet_parallax_layout_bg_y_mobile":"","jet_parallax_layout_bg_size":"auto","jet_parallax_layout_bg_size_tablet":"","jet_parallax_layout_bg_size_mobile":"","jet_parallax_layout_animation_prop":"transform","jet_parallax_layout_on":["desktop","tablet"]}]}'>
@@ -781,7 +775,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> --}}
                         <div class="elementor-element elementor-element-3f5482ef elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
                             data-id="3f5482ef" data-element_type="widget" data-widget_type="divider.default">
                             <div class="elementor-widget-container">
@@ -838,12 +832,8 @@
                             data-id="1a728b58" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <a href="index.html">
-                                    <img width="333" height="87" src="wp-content/uploads/2022/04/sch-logom.png"
+                                    <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                         class="attachment-full size-full wp-image-1215" alt=""
-                                        srcset="
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom.png        333w,
-                        https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logom-300x78.png 300w
-                      "
                                         sizes="(max-width: 333px) 100vw, 333px" />
                                 </a>
                             </div>
@@ -1185,7 +1175,7 @@
                                         content: '' !important;
                                     }
                                 </style>
-                                <form action="{{route('login')}}">
+                                <form action="{{ route('login') }}">
                                     @csrf
                                     <div class="elementor-form-fields-wrapper">
                                         <div

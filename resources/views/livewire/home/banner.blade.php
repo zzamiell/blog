@@ -17,15 +17,17 @@
                                     data-slider_options='{"autoplaySpeed":5000,"autoplay":true,"infinite":true,"centerMode":false,"pauseOnHover":false,"speed":500,"arrows":false,"dots":true,"variableWidth":false,"prevArrow":".jet-carousel__prev-arrow-50b66461","nextArrow":".jet-carousel__next-arrow-50b66461","rtl":false,"fractionNav":false}'
                                     dir="ltr">
                                     <div class="elementor-slick-slider">
-                                        <div class="jet-carousel__item">
-                                            <div class="jet-carousel__item-inner">
-                                                <img decoding="async" src="wp-content/uploads/2022/04/featured.jpg"
-                                                    class="jet-carousel__item-img" alt="featured" loading="lazy" />
-                                                <div class="jet-carousel__content"></div>
+                                        @foreach ($banner as $item)
+                                            <div class="jet-carousel__item">
+                                                <div class="jet-carousel__item-inner">
+                                                    <img src="{{ asset($item->banner) }}" class="jet-carousel__item-img"
+                                                        alt="featured" />
+                                                    <div class="jet-carousel__content"></div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endforeach
 
-                                        <div class="jet-carousel__item">
+                                        {{-- <div class="jet-carousel__item">
                                             <div class="jet-carousel__item-inner">
                                                 <img decoding="async" src="wp-content/uploads/2022/04/featured.jpg"
                                                     class="jet-carousel__item-img" alt="featured" loading="lazy" />
@@ -55,7 +57,7 @@
                                                     class="jet-carousel__item-img" alt="oto" loading="lazy" />
                                                 <div class="jet-carousel__content"></div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>

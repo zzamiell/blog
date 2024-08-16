@@ -53,7 +53,8 @@
                             <div class="elementor-element elementor-element-e7d6d71 elementor-widget elementor-widget-heading"
                                 data-id="e7d6d71" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default">Sekolah Crocoblock</h2>
+                                    <h2 class="elementor-heading-title elementor-size-default">Sekolah
+                                        {{ $sekolah->nama_sekolah }}</h2>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-96695b0 elementor-widget elementor-widget-jet-listing-grid"

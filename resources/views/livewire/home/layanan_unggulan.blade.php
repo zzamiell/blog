@@ -44,7 +44,7 @@
                             }
                         </style>
                         <h2 class="elementor-heading-title elementor-size-default">
-                            Layanan unggulan Sekolah Crocoblock
+                            Layanan unggulan Sekolah {{ $sekolah->nama_sekolah }}
                         </h2>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="visi-dan-misi/index.html">
+                                                                    <a href="{{ route('visimisiComponent') }}">
                                                                         <img decoding="async" width="119"
                                                                             height="119"
                                                                             src="wp-content/uploads/2022/04/annouce.png"
@@ -138,7 +138,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="visi-dan-misi/index.html"
+                                                                        <a href="{{ route('visimisiComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Visi
                                                                                 dan Misi</span></a>
@@ -171,7 +171,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="download/index.html">
+                                                                    <a href="{{ route('downloadComponent') }}">
                                                                         <img loading="lazy" decoding="async"
                                                                             width="119" height="119"
                                                                             src="wp-content/uploads/2022/04/lib.png"
@@ -185,7 +185,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="download/index.html"
+                                                                        <a href="{{ route('downloadComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Download</span></a>
                                                                     </div>
@@ -217,7 +217,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="sambutan-kepala-sekolah/index.html">
+                                                                    <a href="{{ route('sambutanComponent') }}">
                                                                         <img loading="lazy" decoding="async"
                                                                             width="119" height="119"
                                                                             src="wp-content/uploads/2022/04/sambut.png"
@@ -231,7 +231,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="sambutan-kepala-sekolah/index.html"
+                                                                        <a href="{{ route('sambutanComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Sambutan</span></a>
                                                                     </div>
@@ -263,7 +263,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="agenda/index.html">
+                                                                    <a href="{{ route('agendaComponent') }}">
                                                                         <img loading="lazy" decoding="async"
                                                                             width="119" height="119"
                                                                             src="wp-content/uploads/2022/04/agend.png"
@@ -277,7 +277,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="agenda/index.html"
+                                                                        <a href="{{ route('agendaComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Agenda</span></a>
                                                                     </div>
@@ -309,7 +309,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="pengumuman/index.html">
+                                                                    <a href="{{ route('pengumumanComponent') }}">
                                                                         <img decoding="async" width="119"
                                                                             height="119"
                                                                             src="wp-content/uploads/2022/04/annouce.png"
@@ -323,7 +323,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="pengumuman/index.html"
+                                                                        <a href="{{ route('pengumumanComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Pengumuman</span></a>
                                                                     </div>
@@ -355,7 +355,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="ekstrakurikuler/index.html">
+                                                                    <a href="{{ route('eskulComponent') }}">
                                                                         <img loading="lazy" decoding="async"
                                                                             width="119" height="119"
                                                                             src="wp-content/uploads/2022/04/eskul.png"
@@ -369,7 +369,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="ekstrakurikuler/index.html"
+                                                                        <a href="{{ route('eskulComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Ekstrakurikuler</span></a>
                                                                     </div>
@@ -401,7 +401,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="prestasi/index.html">
+                                                                    <a href="{{ route('prestasiComponent') }}">
                                                                         <img loading="lazy" decoding="async"
                                                                             width="119" height="119"
                                                                             src="wp-content/uploads/2022/04/prest.png"
@@ -415,7 +415,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="prestasi/index.html"
+                                                                        <a href="{{ route('prestasiComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Prestasi</span></a>
                                                                     </div>

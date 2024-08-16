@@ -53,7 +53,7 @@
                             data-id="60de6157" data-element_type="widget" data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-default">
-                                    Jarajan Guru dan Tenaga Pendidik Sekolah Crocoblock
+                                    Jarajan Guru dan Tenaga Pendidik Sekolah {{ $sekolah->nama_sekolah }}
                                 </h2>
                             </div>
                         </div>

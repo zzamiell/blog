@@ -26,7 +26,7 @@
                                     data-id="d1733ef" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Ekstrakurikuler Sekolah Crocoblock
+                                            Ekstrakurikuler Sekolah {{ $sekolah->nama_sekolah }}
                                         </h2>
                                     </div>
                                 </div>

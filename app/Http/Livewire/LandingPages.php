@@ -43,10 +43,13 @@ class LandingPages extends Component
         $data['pengumuman'] = DB::table('pengumuman')->latest('id')->take(3)->get();
         $data['fasilitas'] = DB::table('fasilitas')->latest('id')->take(3)->get();
         $data['kegiatan'] = DB::table('kegiatan')->latest('id')->take(3)->get();
+        $data['banner'] = DB::table('sekolah_banner')->where('sekolahId',1)->get();
+        $data['sekolah'] = DB::table('sekolah')->where('id',1)->first();
 
         return view('livewire.landing-pages', $data)
         ->layoutData([
             'title' => $this->title,
+            'sekolah' => $data['sekolah'],
         ]);
     }
 }

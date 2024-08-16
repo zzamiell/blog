@@ -619,7 +619,7 @@
                                             data-widget_type="share-buttons.default">
                                             <div class="elementor-widget-container">
                                                 <link rel="stylesheet"
-                                                    href="../../wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css">
+                                                    href="{{asset('wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css')}}">
                                                 <div class="elementor-grid">
                                                     <div class="elementor-grid-item">
                                                         <div class="elementor-share-btn elementor-share-btn_facebook"

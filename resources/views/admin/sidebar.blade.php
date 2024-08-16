@@ -85,6 +85,12 @@
             </div>
         </div>
     </li>
+    <li class="nav-item {{ request()->segment(2) === 'pengaturan' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('pengaturan.index') }}">
+            <i class="fas fa-gear"></i>
+
+            <span>Pengaturan</span></a>
+    </li>
 
 
     <hr class="sidebar-divider d-none d-md-block">

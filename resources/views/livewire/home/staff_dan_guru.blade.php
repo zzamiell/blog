@@ -26,7 +26,7 @@
                                     data-id="579bc3f5" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Daftar Guru Sekolah Crocoblock
+                                            Daftar Guru Sekolah {{ $sekolah->nama_sekolah }}
                                         </h2>
                                     </div>
                                 </div>

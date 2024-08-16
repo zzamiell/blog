@@ -10,7 +10,7 @@
                     data-id="5890c053" data-element_type="widget" data-widget_type="icon.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-icon-wrapper">
-                            <a class="elementor-icon" href="index.html">
+                            <a class="elementor-icon" href="{{ route('index') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
                                     viewBox="0 0 24 24" width="512" height="512">
                                     <path
@@ -25,7 +25,7 @@
                     data-id="3813154a" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            <a href="index.html">Home</a>
+                            <a href="{{ route('index') }}">Home</a>
                         </h2>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     data-id="61b20440" data-element_type="widget" data-widget_type="icon.default">
                     <div class="elementor-widget-container">
                         <div class="elementor-icon-wrapper">
-                            <a class="elementor-icon" href="artikel/index.html">
+                            <a class="elementor-icon" href="{{ route('beritaComponent') }}">
                                 <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512"
                                     viewBox="0 0 24 24" width="512" data-name="Layer 1">
                                     <path
@@ -53,7 +53,7 @@
                     data-id="5c724060" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            <a href="artikel/index.html">Artikel</a>
+                            <a href="{{ route('beritaComponent') }}">Artikel</a>
                         </h2>
                     </div>
                 </div>

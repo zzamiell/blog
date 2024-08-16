@@ -39,8 +39,7 @@
                                     <div class="elementor-element elementor-element-3aa9bc6 elementor-widget elementor-widget-image"
                                         data-id="3aa9bc6" data-element_type="widget" data-widget_type="image.default">
                                         <div class="elementor-widget-container">
-                                            <img width="333" height="87"
-                                                src="wp-content/uploads/2022/04/sch-logo.png"
+                                            <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                                 class="attachment-full size-full wp-image-1216" alt=""
                                                 sizes="(max-width: 333px) 100vw, 333px" />
                                         </div>
@@ -118,7 +117,7 @@
     @else
         <main id="content" class="site-main post-63 page type-page status-publish hentry">
             <div class="page-content">
-                <div data-elementor-type="wp-page" data-elementor-id="63" class="elementor elementor-63">
+                <div data-elementor-type="wp-page mb-5" data-elementor-id="63" class="elementor elementor-63">
                     {{ $slot }}
                 </div>
                 <div class="post-tags"></div>
@@ -140,13 +139,8 @@
                                 data-id="f5c1b9" data-element_type="widget" data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                     <a href="index.html">
-                                        <img width="333" height="87"
-                                            src="wp-content/uploads/2022/04/sch-logo.png"
+                                        <img width="333" height="87" src="{{ asset($sekolah->logo) }}"
                                             class="attachment-full size-full wp-image-1216" alt=""
-                                            srcset="
-                          https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logo.png        333w,
-                          https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/sch-logo-300x78.png 300w
-                        "
                                             sizes="(max-width: 333px) 100vw, 333px" />
                                     </a>
                                 </div>
