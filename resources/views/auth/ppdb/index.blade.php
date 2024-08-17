@@ -1,6 +1,6 @@
 @extends('admin.app')
 
-@section('title', 'Kelola Fasilitas Sekolah')
+@section('title', 'Kelola ppdb Sekolah')
 
 @section('content')
     <div class="row">
@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">kelola data fasilitas</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">kelola data ppdb </h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -22,16 +22,16 @@
                             <thead>
                                 <tr align="center">
                                     <th>#no</th>
-                                    <th>fasilitas</th>
+                                    <th>judul</th>
                                     <th>slug</th>
-                                    <th>author</th>
+                                    <th>creator</th>
                                     <th>created at</th>
                                     <th>action</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                @foreach ($feeds as $key => $item)
+                                @foreach ($ppdb as $key => $item)
                                     <tr align="center">
                                         <td>{{ $key + 1 }}</td>
                                         <td align="center" class="center"> <img src="{{ asset($item->thumbnail) }}"
@@ -50,7 +50,7 @@
                                                     Update
                                                 </button>
                                                 <form id="delete-form-{{ $item->id }}"
-                                                    action="{{ route('fasilitas.destroy', $item->id) }}" method="POST"
+                                                    action="{{ route('ppdb.destroy', $item->id) }}" method="POST"
                                                     class="d-inline">
                                                     @csrf
                                                     @method('DELETE')
@@ -59,10 +59,6 @@
                                                         Hapus
                                                     </button>
                                                 </form>
-                                                <a href="{{ route('fasilitas.galeri', $item->id) }}"
-                                                    class="btn btn-info rounded-right">
-                                                    Galeri
-                                                </a>
                                             </div>
                                         </td>
 
@@ -76,14 +72,14 @@
                                                     <h5 class="modal-title" id="editKaryawan2{{ $item->id }}Label">
                                                         ubah
                                                         data
-                                                        fasilitas
+                                                        ppdb
                                                     </h5>
                                                     <button type="button" class="close" data-dismiss="modal"
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <form action="{{ route('fasilitas.update', $item->id) }}" method="POST"
+                                                <form action="{{ route('ppdb.update', $item->id) }}" method="POST"
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="modal-body">
@@ -91,8 +87,7 @@
                                                             {{-- field untuk error message --}}
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="recipient-name" class="col-form-label">nama
-                                                                fasilitas</label>
+                                                            <label for="recipient-name" class="col-form-label">judul</label>
                                                             <input type="text" class="form-control"
                                                                 value="{{ $item->judul }}" name="judul">
                                                         </div>
@@ -134,31 +129,28 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="addUserLabel">tambah
                         data
-                        judul
+                        ppdb
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="{{ route('fasilitas.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('ppdb.store') }}" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group" id="errorMsgupdate">
                             {{-- field untuk error message --}}
                         </div>
                         @csrf
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">nama fasilitas</label>
+                            <label for="recipient-name" class="col-form-label">judul</label>
                             <input type="text" class="form-control" name="judul">
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">thumbnail</label>
                             <input type="file" class="form-control" name="thumbnail">
-                            <small style="color: red">*abaikan jika tidak ingin mengubah
-                                gambar</small>
                         </div>
-
                         <div class="form-group">
-                            <label for="editor" class="col-form-label">Konten</label>
+                            <label for="editor" class="col-form-label">deskripsi</label>
                             <textarea id="editor" name="deskripsi"></textarea>
                         </div>
 

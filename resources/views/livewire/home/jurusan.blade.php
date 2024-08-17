@@ -85,7 +85,7 @@
                                                                     <div class="elementor-widget-container">
                                                                         <div class="elementor-button-wrapper">
                                                                             <a class="elementor-button elementor-button-link elementor-size-sm"
-                                                                                href="{{ route('agendaDetailComponent', $item->slug) }}">
+                                                                                href="{{ route('jurusanDetailComponent', $item->slug) }}">
                                                                                 <span
                                                                                     class="elementor-button-content-wrapper">
                                                                                     <span
@@ -105,7 +105,7 @@
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
                                                                         <a
-                                                                            href="{{ route('agendaDetailComponent', $item->slug) }}">
+                                                                            href="{{ route('jurusanDetailComponent', $item->slug) }}">
                                                                             <img loading="lazy" decoding="async"
                                                                                 width="1300" height="867"
                                                                                 src="{{ $item->thumbnail }}"

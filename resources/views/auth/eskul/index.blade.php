@@ -68,7 +68,7 @@
 
                                     <div class="modal fade" id="editKaryawan2{{ $item->id }}" role="dialog"
                                         aria-labelledby="editKaryawan2{{ $item->id }}Label" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-dialog modal-xl" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="editKaryawan2{{ $item->id }}Label">
@@ -210,10 +210,12 @@
         function initTiny() {
             tinymce.init({
                 selector: '#editor',
-                plugins: 'code',
-                toolbar: 'undo redo',
+                plugins: 'image code media',
+                toolbar: 'undo redo | link image | code | media',
                 image_caption: true,
                 automatic_uploads: true,
+                media_live_embeds: true, // Optional: This allows live embeds of media
+                menubar: true // Optional: Hide the menu bar for a cleaner UI
             });
         }
 
@@ -239,10 +241,12 @@
         function initializeTinyMCE(modalId) {
             tinymce.init({
                 selector: `.${modalId}`, // Unique ID for each modal's textarea
-                plugins: 'image code',
-                toolbar: 'undo redo | link image | code',
+                plugins: 'image code media',
+                toolbar: 'undo redo | link image | code | media',
                 image_title: true,
                 automatic_uploads: true,
+                media_live_embeds: true,
+                menubar: true,
                 file_picker_types: 'image',
                 file_picker_callback: (cb, value, meta) => {
                     const input = document.createElement('input');

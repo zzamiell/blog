@@ -38,8 +38,11 @@
 
     @include('livewire.home.eskul')
     @include('livewire.home.pengumuman')
+    @include('livewire.home.ppdb')
+    @include('livewire.home.ujian')
     @include('livewire.home.fasilitas')
     @include('livewire.home.kegiatan')
+    @include('livewire.home.alumni')
     <div style="margin-bottom: 20%">
 
     </div>

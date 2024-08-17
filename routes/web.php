@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Login;
+use App\Http\Livewire\Alumni;
 use App\Http\Livewire\VisiMisi;
 use App\Http\Livewire\Sambutan;
 use App\Http\Livewire\Download;
@@ -21,10 +22,17 @@ use App\Http\Livewire\BeritaDetail;
 use App\Http\Livewire\Guru;
 use App\Http\Livewire\GuruDetail;
 use App\Http\Livewire\LandingPages;
+use App\Http\Livewire\Ujian;
+use App\Http\Livewire\UjianDetail;
+use App\Http\Livewire\PPDB;
+use App\Http\Livewire\PPDBDetail;
 use App\Http\Livewire\Pengumuman;
 use App\Http\Livewire\PengumumanDetail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\PPDBController;
+use App\Http\Controllers\UjianController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AgendaController;
@@ -50,6 +58,8 @@ use App\Http\Controllers\PengaturanController;
 */
 
 Route::get('/', LandingPages::class)->name('index');
+
+Route::get('/alumni', Alumni::class)->name('alumniComponent');
 
 Route::get('/visi-misi', VisiMisi::class)->name('visimisiComponent');
 Route::get('/sambutan', Sambutan::class)->name('sambutanComponent');
@@ -82,6 +92,12 @@ Route::get('/pengumuman-{id}', PengumumanDetail::class)->name('pengumumanDetailC
 Route::get('/fasilitas', Fasilitas::class)->name('fasilitasComponent');
 Route::get('/fasilitas-{id}', FasilitasDetail::class)->name('fasilitasDetailComponent');
 
+Route::get('/ujian', Ujian::class)->name('ujianComponent');
+Route::get('/ujian-{id}', UjianDetail::class)->name('ujianDetailComponent');
+
+Route::get('/ppdb', PPDB::class)->name('ppdbComponent');
+Route::get('/ppdb-{id}', PPDBDetail::class)->name('ppdbDetailComponent');
+
 Route::get('/kegiatan', Kegiatan::class)->name('kegiatanComponent');
 Route::get('/kegiatan-{id}', KegiatanDetail::class)->name('kegiatanDetailComponent');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -97,6 +113,24 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('/guru', [GuruController::class, 'store'])->name('guru.store');
         Route::post('/guru/update/{id}', [GuruController::class, 'update'])->name('guru.update');
         Route::delete('/guru/destroy/{id}', [GuruController::class, 'destroy'])->name('guru.destroy');
+
+        // ALUMNI
+        Route::get('/alumni', [AlumniController::class, 'index'])->name('alumni.index');
+        Route::post('/alumni', [AlumniController::class, 'store'])->name('alumni.store');
+        Route::post('/alumni/update/{id}', [AlumniController::class, 'update'])->name('alumni.update');
+        Route::delete('/alumni/destroy/{id}', [AlumniController::class, 'destroy'])->name('alumni.destroy');
+
+        // UJIAN
+        Route::get('/ujian', [UjianController::class, 'index'])->name('ujian.index');
+        Route::post('/ujian', [UjianController::class, 'store'])->name('ujian.store');
+        Route::post('/ujian/update/{id}', [UjianController::class, 'update'])->name('ujian.update');
+        Route::delete('/ujian/destroy/{id}', [UjianController::class, 'destroy'])->name('ujian.destroy');
+
+        // PPDB
+        Route::get('/ppdb', [PPDBController::class, 'index'])->name('ppdb.index');
+        Route::post('/ppdb', [PPDBController::class, 'store'])->name('ppdb.store');
+        Route::post('/ppdb/update/{id}', [PPDBController::class, 'update'])->name('ppdb.update');
+        Route::delete('/ppdb/destroy/{id}', [PPDBController::class, 'destroy'])->name('ppdb.destroy');
 
 
         // SISWA

@@ -1,6 +1,6 @@
 @extends('admin.app')
 
-@section('title', 'Kelola Fasilitas Sekolah')
+@section('title', 'Kelola alumni Sekolah')
 
 @section('content')
     <div class="row">
@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">kelola data fasilitas</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">kelola data alumni </h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -22,26 +22,24 @@
                             <thead>
                                 <tr align="center">
                                     <th>#no</th>
-                                    <th>fasilitas</th>
-                                    <th>slug</th>
-                                    <th>author</th>
+                                    <th>nama</th>
+                                    <th>tahun kelulusan</th>
                                     <th>created at</th>
                                     <th>action</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                @foreach ($feeds as $key => $item)
+                                @foreach ($alumni as $key => $item)
                                     <tr align="center">
                                         <td>{{ $key + 1 }}</td>
                                         <td align="center" class="center"> <img src="{{ asset($item->thumbnail) }}"
-                                                alt="{{ $item->judul }}"
+                                                alt="{{ $item->nama }}"
                                                 style="max-width: 100px; height: auto; vertical-align: middle;">
                                             <span
-                                                style="vertical-align: middle; margin-left: 10px;">{{ $item->judul }}</span>
+                                                style="vertical-align: middle; margin-left: 10px;">{{ $item->nama }}</span>
                                         </td>
-                                        <td align="center" class="center">{{ $item->slug }}</td>
-                                        <td align="center" class="center">{{ $item->creator }}</td>
+                                        <td align="center" class="center">{{ $item->kelulusan }}</td>
                                         <td align="center" class="center">{{ $item->created_at }}</td>
                                         <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Button group">
@@ -50,7 +48,7 @@
                                                     Update
                                                 </button>
                                                 <form id="delete-form-{{ $item->id }}"
-                                                    action="{{ route('fasilitas.destroy', $item->id) }}" method="POST"
+                                                    action="{{ route('ujian.destroy', $item->id) }}" method="POST"
                                                     class="d-inline">
                                                     @csrf
                                                     @method('DELETE')
@@ -59,10 +57,6 @@
                                                         Hapus
                                                     </button>
                                                 </form>
-                                                <a href="{{ route('fasilitas.galeri', $item->id) }}"
-                                                    class="btn btn-info rounded-right">
-                                                    Galeri
-                                                </a>
                                             </div>
                                         </td>
 
@@ -76,14 +70,14 @@
                                                     <h5 class="modal-title" id="editKaryawan2{{ $item->id }}Label">
                                                         ubah
                                                         data
-                                                        fasilitas
+                                                        alumni
                                                     </h5>
                                                     <button type="button" class="close" data-dismiss="modal"
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <form action="{{ route('fasilitas.update', $item->id) }}" method="POST"
+                                                <form action="{{ route('alumni.update', $item->id) }}" method="POST"
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="modal-body">
@@ -91,10 +85,15 @@
                                                             {{-- field untuk error message --}}
                                                         </div>
                                                         <div class="form-group">
-                                                            <label for="recipient-name" class="col-form-label">nama
-                                                                fasilitas</label>
+                                                            <label for="recipient-name" class="col-form-label">nama</label>
                                                             <input type="text" class="form-control"
-                                                                value="{{ $item->judul }}" name="judul">
+                                                                value="{{ $item->nama }}" name="nama">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">tahun
+                                                                kelulusan</label>
+                                                            <input type="text" class="form-control"
+                                                                value="{{ $item->kelulusan }}" name="kelulusan">
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="recipient-name"
@@ -134,31 +133,32 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="addUserLabel">tambah
                         data
-                        judul
+                        alumni
                     </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="{{ route('fasilitas.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('alumni.store') }}" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group" id="errorMsgupdate">
                             {{-- field untuk error message --}}
                         </div>
                         @csrf
                         <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">nama fasilitas</label>
-                            <input type="text" class="form-control" name="judul">
+                            <label for="recipient-name" class="col-form-label">nama</label>
+                            <input type="text" class="form-control" name="nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">tahun kelulusan</label>
+                            <input type="text" class="form-control" name="kelulusan">
                         </div>
                         <div class="form-group">
                             <label for="recipient-name" class="col-form-label">thumbnail</label>
                             <input type="file" class="form-control" name="thumbnail">
-                            <small style="color: red">*abaikan jika tidak ingin mengubah
-                                gambar</small>
                         </div>
-
                         <div class="form-group">
-                            <label for="editor" class="col-form-label">Konten</label>
+                            <label for="editor" class="col-form-label">feedback</label>
                             <textarea id="editor" name="deskripsi"></textarea>
                         </div>
 

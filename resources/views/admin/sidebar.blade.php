@@ -19,6 +19,13 @@
     <div class="sidebar-heading">
         MENU UTAMA
     </div>
+    <li class="nav-item {{ request()->segment(2) === 'alumni' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('alumni.index') }}">
+            <i class="fas fa-graduation-cap"></i>
+
+
+            <span>Alumni</span></a>
+    </li>
     <li class="nav-item {{ request()->segment(2) === 'agenda' ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('agenda.index') }}">
             <i class="fas fa-list"></i>
@@ -65,6 +72,18 @@
             <i class="fas fa-bell"></i>
 
             <span>Pengumuman</span></a>
+    </li>
+    <li class="nav-item {{ request()->segment(2) === 'ppdb' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('ppdb.index') }}">
+            <i class="fas fa-user-plus"></i>
+
+            <span>PPDB</span></a>
+    </li>
+    <li class="nav-item {{ request()->segment(2) === 'ujian' ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('ujian.index') }}">
+            <i class="fas fa-pencil-alt"></i>
+
+            <span>Ujian</span></a>
     </li>
     <li class="nav-item {{ request()->segment(2) == 'guru' || request()->segment(2) == 'siswa' ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2"

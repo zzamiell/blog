@@ -398,20 +398,24 @@
         function initTiny() {
             tinymce.init({
                 selector: '#editor',
-                plugins: 'image code',
-                toolbar: 'undo redo | link image | code',
-                image_title: true,
+                plugins: 'image code media',
+                toolbar: 'undo redo | link image | code | media',
+                image_caption: true,
                 automatic_uploads: true,
+                media_live_embeds: true, // Optional: This allows live embeds of media
+                menubar: true // Optional: Hide the menu bar for a cleaner UI
             });
         }
 
         function initTiny2() {
             tinymce.init({
                 selector: '#editor2',
-                plugins: 'image code',
-                toolbar: 'undo redo | link image | code',
-                image_title: true,
+                plugins: 'image code media',
+                toolbar: 'undo redo | link image | code | media',
+                image_caption: true,
                 automatic_uploads: true,
+                media_live_embeds: true, // Optional: This allows live embeds of media
+                menubar: true // Optional: Hide the menu bar for a cleaner UI
             });
         }
 

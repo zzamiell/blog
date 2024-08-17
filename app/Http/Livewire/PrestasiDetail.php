@@ -27,13 +27,16 @@ class PrestasiDetail extends Component
 
         $this->berita = DB::table('pengumuman')->latest('id')->take(10)->get();
         $this->sekolah = DB::table('sekolah')->where('id',1)->first();
+
+        $this->alumni = DB::table('alumni')->get();
+        $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function render()
     {
 
         return view('livewire.prestasidetail',[
-            'prestasi' =>  $this->prestasi,
+            'alumno' =>  $this->alumno,
             'pengumuman' =>  $this->berita,
             'sekolah' =>  $this->sekolah
             ])->layoutData([
