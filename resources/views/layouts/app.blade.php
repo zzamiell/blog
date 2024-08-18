@@ -57,9 +57,8 @@
                                             <div class="elementor-jet-ajax-search jet-search">
                                                 <div class="jet-ajax-search jet-ajax-search--mobile-skin"
                                                     data-settings='{"search_source":["post","prestasi","ekskul","geopark","agenda","buku"],"search_taxonomy":"","include_terms_ids":"","exclude_terms_ids":"","exclude_posts_ids":"","custom_fields_source":"","limit_query":5,"limit_query_tablet":"","limit_query_mobile":"","limit_query_in_result_area":25,"results_order_by":"relevance","results_order":"asc","sentence":"","results_area_width_by":"fields_holder","thumbnail_visible":"yes","thumbnail_size":"thumbnail","thumbnail_placeholder":{"url":"","id":"","size":""},"post_content_source":"excerpt","post_content_custom_field_key":"","post_content_length":25,"show_product_price":"","show_product_rating":"","show_result_new_tab":"","bullet_pagination":"","number_pagination":"","navigation_arrows":"in_header","navigation_arrows_type":"fa fa-angle-left","show_title_related_meta":"","meta_title_related_position":"","title_related_meta":"","show_content_related_meta":"","meta_content_related_position":"","content_related_meta":"","negative_search":"Maaf, tidak ada yang cocok dengan pencarian Anda.","server_error":"Maaf, kami tidak dapat menangani kueri penelusuran Anda sekarang. Silakan coba lagi nanti!"}'>
-                                                    <form class="jet-ajax-search__form" method="get"
-                                                        action="https://sekolah.flymotion.my.id/" role="search"
-                                                        target="">
+                                                    <form class="jet-ajax-search__form" method="get" action="/tes"
+                                                        role="search" target="">
                                                         <div class="jet-ajax-search__fields-holder">
                                                             <div class="jet-ajax-search__field-wrapper">
                                                                 <span
@@ -68,14 +67,8 @@
                                                                         class="fas fa-search"></i></span>
                                                                 <input class="jet-ajax-search__field" type="search"
                                                                     placeholder="Cari Informasi Apa ..." value=""
-                                                                    name="s" autocomplete="off" />
-                                                                <input type="hidden"
-                                                                    value='{"search_source":["post","prestasi","ekskul","geopark","agenda","buku"],"results_order_by":"relevance","results_order":"asc"}'
-                                                                    name="jet_ajax_search_settings" />
-
-                                                                <input type="hidden"
-                                                                    value="post,prestasi,ekskul,geopark,agenda,buku"
-                                                                    name="post_type" />
+                                                                    name="keyword" autocomplete="off"
+                                                                    onkeydown="if(event.key === 'Enter'){ this.form.submit(); }" />
                                                             </div>
                                                         </div>
                                                     </form>

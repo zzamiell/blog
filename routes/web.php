@@ -25,6 +25,7 @@ use App\Http\Livewire\LandingPages;
 use App\Http\Livewire\Ujian;
 use App\Http\Livewire\UjianDetail;
 use App\Http\Livewire\PPDB;
+use App\Http\Livewire\Search;
 use App\Http\Livewire\PPDBDetail;
 use App\Http\Livewire\Pengumuman;
 use App\Http\Livewire\PengumumanDetail;
@@ -56,8 +57,9 @@ use App\Http\Controllers\PengaturanController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', LandingPages::class)->name('index');
+
+Route::get('/search', Search::class)->name('searchComponent');
 
 Route::get('/alumni', Alumni::class)->name('alumniComponent');
 
