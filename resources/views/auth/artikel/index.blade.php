@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6 text-right mb-3">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">+
+            <button type="button" onclick="initTiny()" class="btn btn-primary" data-toggle="modal" data-target="#addUser">+
                 tambah</button>
         </div>
     </div>
@@ -66,9 +66,8 @@
 
                                     </tr>
 
-                                    <div class="modal fade" id="editKaryawan2{{ $item->id }}" tabindex="-1"
-                                        role="dialog" aria-labelledby="editKaryawan2{{ $item->id }}Label"
-                                        aria-hidden="true">
+                                    <div class="modal fade" id="editKaryawan2{{ $item->id }}" role="dialog"
+                                        aria-labelledby="editKaryawan2{{ $item->id }}Label" aria-hidden="true">
                                         <div class="modal-dialog modal-xl" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -137,8 +136,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="addUser" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -179,7 +177,7 @@
 
                         <div class="form-group">
                             <label for="editor" class="col-form-label">Konten</label>
-                            <textarea id="editor" name="content"></textarea>
+                            <textarea id="editorxxx" name="content"></textarea>
                         </div>
 
                     </div>
@@ -194,15 +192,17 @@
     </div>
 
     <script lang="text/javascript">
-        tinymce.init({
-            selector: '#editor',
-            plugins: 'image code media',
-            toolbar: 'undo redo | link image | code | media',
-            image_caption: true,
-            automatic_uploads: true,
-            media_live_embeds: true, // Optional: This allows live embeds of media
-            menubar: true // Optional: Hide the menu bar for a cleaner UI
-        });
+        function initTiny() {
+            tinymce.init({
+                selector: '#editorxxx',
+                plugins: 'image code media',
+                toolbar: 'undo redo | link image | code | media',
+                image_caption: true,
+                automatic_uploads: true,
+                media_live_embeds: true,
+                menubar: true
+            });
+        }
 
         function confirmDelete(id) {
             Swal.fire({
