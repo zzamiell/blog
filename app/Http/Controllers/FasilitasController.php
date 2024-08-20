@@ -143,9 +143,9 @@ class FasilitasController extends Controller
     }
 
     public function destroy($id){
-        DB::table('jurusan')->where('id', $id)->delete();
-        return redirect()->route('jurusan.index')
-        ->with('success', 'berhasil hapus data jurusan.');
+        DB::table('fasilitas')->where('id', $id)->delete();
+        return redirect()->route('fasilitas.index')
+        ->with('success', 'berhasil hapus data fasilitas.');
     }
 
     public function galeri_destroy($id, $fasilitasId){

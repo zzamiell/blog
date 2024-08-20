@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Validator;
 class EskulController extends Controller
 {
     public function index(){
-        $data['feeds'] = DB::table('eskul')->join('users as creator', 'eskul.userId', '=', 'creator.id')
-        ->join('users as pembina', 'eskul.pembinaId', '=', 'pembina.id')
-        ->select('eskul.*','creator.fullname as creator','pembina.fullname as pembina')
+        $data['feeds'] = DB::table('eskul')->leftjoin('users as creator', 'eskul.userId', '=', 'creator.id')
+        ->leftjoin('users as pembina', 'eskul.pembinaId', '=', 'pembina.id')
+        ->select('eskul.*','creator.fullname as creator')
         ->get();
 
         $data['users'] = DB::table('users')->where('role',"!=","ADMIN")->get();
@@ -31,7 +31,6 @@ class EskulController extends Controller
                 "judul" => "required",
                 "thumbnail" => "required",
                 "deskripsi" => "required",
-                "pembinaId" => "required",
             ],
         );
 
@@ -71,7 +70,6 @@ class EskulController extends Controller
             [
                 "judul" => "required",
                 "deskripsi" => "required",
-                "pembinaId" => "required",
             ],
         );
 
@@ -98,7 +96,7 @@ class EskulController extends Controller
             $data['thumbnail'] = $filename;
         }
 
-        $slug = Str::slug($request->jurusan);
+        $slug = Str::slug($request->judul);
         $data['slug'] = $slug;
         $data['userId'] = $user->id;
 

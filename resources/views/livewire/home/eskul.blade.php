@@ -80,13 +80,10 @@
                                                                     <div class="elementor-widget-container">
                                                                         <a
                                                                             href="{{ route('eskulDetailComponent', $item->slug) }}">
-                                                                            <img loading="lazy" decoding="async"
-                                                                                width="700" height="393"
+                                                                            <img width="700" height="393"
                                                                                 src="{{ asset($item->thumbnail) }}"
                                                                                 class="attachment-full size-full wp-image-1281"
-                                                                                alt="{{ $item->judul }}"
-                                                                                srcset="{{ $item->judul }}"
-                                                                                sizes="(max-width: 700px) 100vw, 700px" />
+                                                                                alt="{{ $item->judul }}" />
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -100,7 +97,7 @@
                                                                                 class="jet-listing-dynamic-field__inline-wrap">
                                                                                 <div
                                                                                     class="jet-listing-dynamic-field__content">
-                                                                                    Drumband
+                                                                                    {{ $item->judul }}
                                                                                 </div>
                                                                             </div>
                                                                         </div>

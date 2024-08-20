@@ -101,7 +101,7 @@
                                                             <small style="color: red">*abaikan jika tidak ingin mengubah
                                                                 gambar</small>
                                                         </div>
-
+                                                        {{--
                                                         <div class="form-group">
                                                             <label for="recipient-name"
                                                                 class="col-form-label">pembina</label>
@@ -112,6 +112,14 @@
                                                                         {{ $user->fullname }}</option>
                                                                 @endforeach
                                                             </select>
+                                                        </div> --}}
+
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">nama
+                                                                pembina {{ $item->pembina }}</label>
+
+                                                            <input type="text" value="{{ $item->pembina }}"
+                                                                class="form-control" name="pembina">
                                                         </div>
 
 
@@ -167,13 +175,18 @@
                                 gambar</small>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="recipient-name" class="col-form-label">pembina</label>
                             <select name="pembinaId" id="koordinatorId" class="form-control">
                                 @foreach ($users as $user)
                                     <option value="{{ $user->id }}">{{ $user->fullname }}</option>
                                 @endforeach
                             </select>
+                        </div> --}}
+
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">nama pembina</label>
+                            <input type="text" class="form-control" name="pembina">
                         </div>
 
                         <div class="form-group">

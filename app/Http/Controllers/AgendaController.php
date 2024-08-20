@@ -12,8 +12,8 @@ use Illuminate\Support\Facades\Validator;
 class AgendaController extends Controller
 {
     public function index(){
-        $data['feeds'] = DB::table('agenda') ->join('users as creator', 'agenda.userId', '=', 'creator.id')
-        ->join('users as koordinator', 'agenda.koordinatorId', '=', 'koordinator.id')
+        $data['feeds'] = DB::table('agenda') ->leftjoin('users as creator', 'agenda.userId', '=', 'creator.id')
+        ->leftjoin('users as koordinator', 'agenda.koordinatorId', '=', 'koordinator.id')
         ->select('agenda.*','creator.fullname as creator','koordinator.fullname as koordinator')
         ->get();
 
@@ -32,7 +32,9 @@ class AgendaController extends Controller
                 "pelaksanaan" => "required",
                 "start" => "required",
                 "end" => "required",
-                "koordinatorId" => "required",
+                "knama" => "required",
+                "kphone" => "required",
+                "kemail" => "required",
             ],
         );
 
@@ -74,7 +76,9 @@ class AgendaController extends Controller
                 "pelaksanaan" => "required",
                 "start" => "required",
                 "end" => "required",
-                "koordinatorId" => "required",
+               "knama" => "required",
+                "kphone" => "required",
+                "kemail" => "required",
             ],
         );
 

@@ -36,7 +36,7 @@ class PrestasiDetail extends Component
     {
 
         return view('livewire.prestasidetail',[
-            'alumno' =>  $this->alumno,
+            'prestasi' =>  $this->prestasi,
             'pengumuman' =>  $this->berita,
             'sekolah' =>  $this->sekolah
             ])->layoutData([

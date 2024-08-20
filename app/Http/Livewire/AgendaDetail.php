@@ -21,9 +21,9 @@ class AgendaDetail extends Component
     public function mount($id){
         $this->slug = $id;
         $this->agenda = DB::table('agenda')
-        ->join('users as creator', 'agenda.userId', '=', 'creator.id')
-        ->join('users as koordinator', 'agenda.koordinatorId', '=', 'koordinator.id')
-        ->select('agenda.*','creator.fullname as creator','koordinator.fullname as koordinator','koordinator.email as kemail','koordinator.phone as kphone')
+        ->leftjoin('users as creator', 'agenda.userId', '=', 'creator.id')
+        ->leftjoin('users as koordinator', 'agenda.koordinatorId', '=', 'koordinator.id')
+        ->select('agenda.*','creator.fullname as creator')
         ->where('slug', $this->slug)->first();
         $this->berita = DB::table('pengumuman')->latest('id')->take(10)->get();
         $this->sekolah = DB::table('sekolah')->where('id',1)->first();

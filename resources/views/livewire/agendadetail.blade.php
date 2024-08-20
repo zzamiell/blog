@@ -350,7 +350,7 @@
                                         <span class="elementor-icon-list-icon">
                                             <i aria-hidden="true" class="far fa-user"></i> </span>
                                         <span class="elementor-icon-list-text"><strong>Nama :</strong>
-                                            {{ $agenda->koordinator }}</span>
+                                            {{ $agenda->knama }}</span>
                                     </li>
                                     <li class="elementor-icon-list-item">
                                         <span class="elementor-icon-list-icon">

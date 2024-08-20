@@ -20,17 +20,18 @@ class EskulDetail extends Component
 
     public function mount($id){
         $this->slug = $id;
-        $this->eskul = DB::table('eskul')->join('users as creator', 'eskul.userId', '=', 'creator.id')
-        ->join('users as pembina', 'eskul.pembinaId', '=', 'pembina.id')
-        ->select('eskul.*','creator.fullname as creator','pembina.fullname as pembina')
-        ->where('slug', $this->slug)->first();
+
+        $this->eskul = DB::table('eskul')
+        ->leftjoin('users as creator', 'eskul.userId', '=', 'creator.id')
+        ->leftjoin('users as pembina', 'eskul.pembinaId', '=', 'pembina.id')
+        ->select('eskul.*','creator.fullname as creator')
+        ->where('eskul.slug', $this->slug)->first();
         $this->berita = DB::table('agenda')->latest('id')->take(10)->get();
         $this->sekolah = DB::table('sekolah')->where('id',1)->first();
     }
 
     public function render()
     {
-
         return view('livewire.eskuldetail',[
             'eskul' =>  $this->eskul,
             'pengumuman' =>  $this->berita,

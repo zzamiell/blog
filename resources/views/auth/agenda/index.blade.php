@@ -28,7 +28,9 @@
                                     <th>pelaksanaan</th>
                                     <th>waktu</th>
                                     <th>author</th>
-                                    <th>koordinator</th>
+                                    <th>nama koordinator</th>
+                                    <th>email koordinator</th>
+                                    <th>phone koordinator</th>
                                     <th>created at</th>
                                     <th>action</th>
                                 </tr>
@@ -49,7 +51,9 @@
                                         <td align="center" class="center">{{ $item->pelaksanaan }}</td>
                                         <td align="center" class="center">{{ $item->start }} - {{ $item->end }}</td>
                                         <td align="center" class="center">{{ $item->creator }}</td>
-                                        <td align="center" class="center">{{ $item->koordinator }}</td>
+                                        <td align="center" class="center">{{ $item->knama }}</td>
+                                        <td align="center" class="center">{{ $item->kemail }}</td>
+                                        <td align="center" class="center">{{ $item->kphone }}</td>
                                         <td align="center" class="center">{{ $item->created_at }}</td>
                                         <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Button group">
@@ -140,7 +144,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="form-group">
+                                                        {{-- <div class="form-group">
                                                             <label for="recipient-name"
                                                                 class="col-form-label">koordinator</label>
                                                             <select name="koordinatorId" id="koordinatorId"
@@ -151,6 +155,25 @@
                                                                         {{ $user->fullname }}</option>
                                                                 @endforeach
                                                             </select>
+                                                        </div> --}}
+
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">Nama
+                                                                Koordinator</label>
+                                                            <input type="text" value="{{ $item->knama }}"
+                                                                class="form-control" name="knama">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">Email
+                                                                Koordinator</label>
+                                                            <input type="text" value="{{ $item->kemail }}"
+                                                                class="form-control" name="kemail">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="recipient-name" class="col-form-label">Np.HP
+                                                                Koordinator</label>
+                                                            <input type="text" value="{{ $item->kphone }}"
+                                                                class="form-control" name="kphone">
                                                         </div>
 
                                                         <div class="form-group">
@@ -230,13 +253,28 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label for="recipient-name" class="col-form-label">koordinator</label>
                             <select name="koordinatorId" id="koordinatorId" class="form-control">
                                 @foreach ($users as $user)
                                     <option value="{{ $user->id }}">{{ $user->fullname }}</option>
                                 @endforeach
                             </select>
+                        </div> --}}
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nama
+                                Koordinator</label>
+                            <input type="text" class="form-control" name="knama">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email
+                                Koordinator</label>
+                            <input type="text" class="form-control" name="kemail">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Np.HP
+                                Koordinator</label>
+                            <input type="text" class="form-control" name="kphone">
                         </div>
 
                         <div class="form-group">

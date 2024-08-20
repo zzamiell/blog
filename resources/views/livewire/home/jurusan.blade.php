@@ -53,22 +53,23 @@
                     data-id="65b0f135" data-element_type="widget" data-settings='{"columns":3}'
                     data-widget_type="jet-listing-grid.default">
                     <div class="elementor-widget-container">
+
                         <div class="jet-listing-grid jet-listing">
                             <div
                                 class="jet-listing-grid__scroll-slider jet-listing-grid__scroll-slider-tablet jet-listing-grid__scroll-slider-mobile">
                                 <div class="jet-listing-grid__items grid-col-desk-3 grid-col-tablet-3 grid-col-mobile-3 jet-listing-grid--1302"
                                     data-nav='{"enabled":false,"type":null,"more_el":null,"query":[],"widget_settings":{"lisitng_id":1302,"posts_num":3,"columns":3,"columns_tablet":3,"columns_mobile":3,"is_archive_template":"","post_status":["publish"],"use_random_posts_num":"","max_posts_num":9,"not_found_message":"Tidak ada eskul","is_masonry":false,"equal_columns_height":"","use_load_more":"","load_more_id":"","load_more_type":"click","use_custom_post_types":"","custom_post_types":[],"hide_widget_if":"","carousel_enabled":"","slides_to_scroll":"1","arrows":"true","arrow_icon":"fa fa-angle-left","dots":"","autoplay":"true","autoplay_speed":5000,"infinite":"true","center_mode":"","effect":"slide","speed":500,"inject_alternative_items":"","injection_items":[],"scroll_slider_enabled":"yes","scroll_slider_on":["tablet","mobile"],"custom_query":false,"custom_query_id":"","_element_id":""}}'
                                     data-page="1" data-pages="1" data-listing-source="posts">
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-1298"
-                                        data-post-id="1298">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-1298 .elementor-element.elementor-element-a8e6ca8 .elementor-button {
-                                                background-color: #ffa800;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="1302"
-                                            class="elementor elementor-1302">
-                                            @foreach ($jurusan as $item)
+                                    @foreach ($jurusan as $item)
+                                        <div class="jet-listing-grid__item jet-listing-dynamic-post-1298"
+                                            data-post-id="1298">
+                                            <style type="text/css">
+                                                .jet-listing-dynamic-post-1298 .elementor-element.elementor-element-a8e6ca8 .elementor-button {
+                                                    background-color: #ffa800;
+                                                }
+                                            </style>
+                                            <div data-elementor-type="jet-listing-items" data-elementor-id="1302"
+                                                class="elementor elementor-1302">
                                                 <section
                                                     class="elementor-section elementor-top-section elementor-element elementor-element-f556d3c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                                     data-id="f556d3c" data-element_type="section"
@@ -137,9 +138,9 @@
                                                         </div>
                                                     </div>
                                                 </section>
-                                            @endforeach
+                                            </div>
                                         </div>
-                                    </div>
+                                    @endforeach
 
                                 </div>
                             </div>
