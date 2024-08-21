@@ -12,12 +12,9 @@
                             data-id="de58aa2" data-element_type="widget"
                             data-widget_type="jet-listing-dynamic-image.default">
                             <div class="elementor-widget-container">
-                                <div class="jet-listing jet-listing-dynamic-image"><img fetchpriority="high"
-                                        width="1300" height="867" src="../../wp-content/uploads/2022/04/oto1.jpg"
-                                        class="attachment-full size-full wp-post-image" alt="Program Keahlian Otomotif"
-                                        decoding="async"
-                                        srcset="https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/oto1.jpg 1300w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/oto1-300x200.jpg 300w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/oto1-1024x683.jpg 1024w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/oto1-150x100.jpg 150w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/04/oto1-768x512.jpg 768w"
-                                        sizes="(max-width: 1300px) 100vw, 1300px"></div>
+                                <div class="jet-listing jet-listing-dynamic-image"><img width="1300" height="867"
+                                        src="{{ $jurusan->thumbnail }}" class="attachment-full size-full wp-post-image"
+                                        alt="{{ $jurusan->jurusan }}" sizes="(max-width: 1300px) 100vw, 1300px"></div>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-3393b61 elementor-widget elementor-widget-heading"
@@ -57,7 +54,7 @@
                                         font-size: 59px
                                     }
                                 </style>
-                                <h2 class="elementor-heading-title elementor-size-default">Program Keahlian Otomotif
+                                <h2 class="elementor-heading-title elementor-size-default">{{ $jurusan->jurusan }}
                                 </h2>
                             </div>
                         </div>
@@ -68,12 +65,13 @@
                                     <li class="elementor-icon-list-item elementor-inline-item">
                                         <span class="elementor-icon-list-icon">
                                             <i aria-hidden="true" class="far fa-user-circle"></i> </span>
-                                        <span class="elementor-icon-list-text">Oleh : flymotio</span>
+                                        <span class="elementor-icon-list-text">Oleh : {{ $jurusan->creator }}</span>
                                     </li>
                                     <li class="elementor-icon-list-item elementor-inline-item">
                                         <span class="elementor-icon-list-icon">
                                             <i aria-hidden="true" class="far fa-calendar-check"></i> </span>
-                                        <span class="elementor-icon-list-text">Tanggal Posting : 07/04/2022</span>
+                                        <span class="elementor-icon-list-text">Tanggal Posting :
+                                            {{ $jurusan->created_at }}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -273,15 +271,9 @@
                                         display: inline-block
                                     }
                                 </style>
-                                <p><span class="elementor-drop-cap"><span
-                                            class="elementor-drop-cap-letter">L</span></span>orem Ipsum is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
-                                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                    type and scrambled it to make a type specimen book. It has survived not only five
-                                    centuries, but also the leap into electronic typesetting, remaining essentially
-                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                                    containing Lorem Ipsum passages, and more recently with desktop publishing software
-                                    like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>
+                                    {!! $jurusan->deskripsi !!}
+                                </p>
                             </div>
                         </div>
                         <div class="elementor-element elementor-element-5355399 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
@@ -619,7 +611,7 @@
                                             data-widget_type="share-buttons.default">
                                             <div class="elementor-widget-container">
                                                 <link rel="stylesheet"
-                                                    href="{{asset('wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css')}}">
+                                                    href="{{ asset('wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css') }}">
                                                 <div class="elementor-grid">
                                                     <div class="elementor-grid-item">
                                                         <div class="elementor-share-btn elementor-share-btn_facebook"

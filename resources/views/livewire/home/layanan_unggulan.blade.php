@@ -78,7 +78,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="{{ route('ppdbComponent') }}">
+                                                                    <a href="{{ route('index') }}">
                                                                         <img decoding="async" width="119"
                                                                             height="119"
                                                                             src="wp-content/uploads/2022/04/ppdb.png"
@@ -92,9 +92,9 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('ppdbComponent') }}"
+                                                                        <a href="{{ route('index') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">PPDB</span></a>
+                                                                                class="jet-listing-dynamic-link__label">Home</span></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -140,8 +140,238 @@
                                                                     <div class="jet-listing jet-listing-dynamic-link">
                                                                         <a href="{{ route('visimisiComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Visi
-                                                                                dan Misi</span></a>
+                                                                                class="jet-listing-dynamic-link__label">Profile</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-13" data-post-id="13">
+                                        <style type="text/css">
+                                            .jet-listing-dynamic-post-13 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
+                                                border-color: #3f95a1;
+                                            }
+                                        </style>
+                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
+                                            class="elementor elementor-707">
+                                            <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="0f261b5" data-element_type="section"
+                                                data-settings='{"jet_parallax_layout_list":[]}'>
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
+                                                        data-id="0114adb" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
+                                                                data-id="4cc4bce" data-element_type="widget"
+                                                                data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <a href="{{ route('agendaComponent') }}">
+                                                                        <img loading="lazy" decoding="async"
+                                                                            width="119" height="119"
+                                                                            src="wp-content/uploads/2022/04/sambut.png"
+                                                                            class="attachment-full size-full wp-image-1220"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
+                                                                data-id="cdb9b26" data-element_type="widget"
+                                                                data-widget_type="jet-listing-dynamic-link.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="jet-listing jet-listing-dynamic-link">
+                                                                        <a href="{{ route('agendaComponent') }}"
+                                                                            class="jet-listing-dynamic-link__link"><span
+                                                                                class="jet-listing-dynamic-link__label">Events</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-12" data-post-id="12">
+                                        <style type="text/css">
+                                            .jet-listing-dynamic-post-12 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
+                                                border-color: #3f95a1;
+                                            }
+                                        </style>
+                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
+                                            class="elementor elementor-707">
+                                            <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="0f261b5" data-element_type="section"
+                                                data-settings='{"jet_parallax_layout_list":[]}'>
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
+                                                        data-id="0114adb" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
+                                                                data-id="4cc4bce" data-element_type="widget"
+                                                                data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <a href="{{ route('jurusanComponent') }}">
+                                                                        <img loading="lazy" decoding="async"
+                                                                            width="119" height="119"
+                                                                            src="wp-content/uploads/2022/04/agend.png"
+                                                                            class="attachment-full size-full wp-image-1219"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
+                                                                data-id="cdb9b26" data-element_type="widget"
+                                                                data-widget_type="jet-listing-dynamic-link.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="jet-listing jet-listing-dynamic-link">
+                                                                        <a href="{{ route('jurusanComponent') }}"
+                                                                            class="jet-listing-dynamic-link__link"><span
+                                                                                class="jet-listing-dynamic-link__label">Jurusan</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-11" data-post-id="11">
+                                        <style type="text/css">
+                                            .jet-listing-dynamic-post-11 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
+                                                border-color: #3f95a1;
+                                            }
+                                        </style>
+                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
+                                            class="elementor elementor-707">
+                                            <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="0f261b5" data-element_type="section"
+                                                data-settings='{"jet_parallax_layout_list":[]}'>
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
+                                                        data-id="0114adb" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
+                                                                data-id="4cc4bce" data-element_type="widget"
+                                                                data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <a href="{{ route('guruComponent') }}">
+                                                                        <img decoding="async" width="119"
+                                                                            height="119"
+                                                                            src="wp-content/uploads/2022/04/annouce.png"
+                                                                            class="attachment-full size-full wp-image-1222"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
+                                                                data-id="cdb9b26" data-element_type="widget"
+                                                                data-widget_type="jet-listing-dynamic-link.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="jet-listing jet-listing-dynamic-link">
+                                                                        <a href="{{ route('guruComponent') }}"
+                                                                            class="jet-listing-dynamic-link__link"><span
+                                                                                class="jet-listing-dynamic-link__label">Staff</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-10" data-post-id="10">
+                                        <style type="text/css">
+                                            .jet-listing-dynamic-post-10 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
+                                                border-color: #3f95a1;
+                                            }
+                                        </style>
+                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
+                                            class="elementor elementor-707">
+                                            <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="0f261b5" data-element_type="section"
+                                                data-settings='{"jet_parallax_layout_list":[]}'>
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
+                                                        data-id="0114adb" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
+                                                                data-id="4cc4bce" data-element_type="widget"
+                                                                data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <a href="{{ route('beritaComponent') }}">
+                                                                        <img loading="lazy" decoding="async"
+                                                                            width="119" height="119"
+                                                                            src="wp-content/uploads/2022/04/eskul.png"
+                                                                            class="attachment-full size-full wp-image-1223"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
+                                                                data-id="cdb9b26" data-element_type="widget"
+                                                                data-widget_type="jet-listing-dynamic-link.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="jet-listing jet-listing-dynamic-link">
+                                                                        <a href="{{ route('beritaComponent') }}"
+                                                                            class="jet-listing-dynamic-link__link"><span
+                                                                                class="jet-listing-dynamic-link__label">Berita</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-9" data-post-id="9">
+                                        <style type="text/css">
+                                            .jet-listing-dynamic-post-9 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
+                                                border-color: #3f95a1;
+                                            }
+                                        </style>
+                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
+                                            class="elementor elementor-707">
+                                            <section
+                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                data-id="0f261b5" data-element_type="section"
+                                                data-settings='{"jet_parallax_layout_list":[]}'>
+                                                <div class="elementor-container elementor-column-gap-no">
+                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
+                                                        data-id="0114adb" data-element_type="column">
+                                                        <div class="elementor-widget-wrap elementor-element-populated">
+                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
+                                                                data-id="4cc4bce" data-element_type="widget"
+                                                                data-widget_type="image.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <a href="{{ route('ppdbComponent') }}">
+                                                                        <img loading="lazy" decoding="async"
+                                                                            width="119" height="119"
+                                                                            src="wp-content/uploads/2022/04/prest.png"
+                                                                            class="attachment-full size-full wp-image-1218"
+                                                                            alt="" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
+                                                                data-id="cdb9b26" data-element_type="widget"
+                                                                data-widget_type="jet-listing-dynamic-link.default">
+                                                                <div class="elementor-widget-container">
+                                                                    <div class="jet-listing jet-listing-dynamic-link">
+                                                                        <a href="{{ route('ppdbComponent') }}"
+                                                                            class="jet-listing-dynamic-link__link"><span
+                                                                                class="jet-listing-dynamic-link__label">Lowongan
+                                                                                Kerja</span></a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -188,236 +418,6 @@
                                                                         <a href="{{ route('downloadComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Download</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-13" data-post-id="13">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-13 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
-                                                border-color: #3f95a1;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
-                                            class="elementor elementor-707">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="0f261b5" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[]}'>
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
-                                                        data-id="0114adb" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
-                                                                data-id="4cc4bce" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="{{ route('sambutanComponent') }}">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="119" height="119"
-                                                                            src="wp-content/uploads/2022/04/sambut.png"
-                                                                            class="attachment-full size-full wp-image-1220"
-                                                                            alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
-                                                                data-id="cdb9b26" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-link.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('sambutanComponent') }}"
-                                                                            class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Sambutan</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-12" data-post-id="12">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-12 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
-                                                border-color: #3f95a1;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
-                                            class="elementor elementor-707">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="0f261b5" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[]}'>
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
-                                                        data-id="0114adb" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
-                                                                data-id="4cc4bce" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="{{ route('agendaComponent') }}">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="119" height="119"
-                                                                            src="wp-content/uploads/2022/04/agend.png"
-                                                                            class="attachment-full size-full wp-image-1219"
-                                                                            alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
-                                                                data-id="cdb9b26" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-link.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('agendaComponent') }}"
-                                                                            class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Agenda</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-11" data-post-id="11">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-11 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
-                                                border-color: #3f95a1;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
-                                            class="elementor elementor-707">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="0f261b5" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[]}'>
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
-                                                        data-id="0114adb" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
-                                                                data-id="4cc4bce" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="{{ route('pengumumanComponent') }}">
-                                                                        <img decoding="async" width="119"
-                                                                            height="119"
-                                                                            src="wp-content/uploads/2022/04/annouce.png"
-                                                                            class="attachment-full size-full wp-image-1222"
-                                                                            alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
-                                                                data-id="cdb9b26" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-link.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('pengumumanComponent') }}"
-                                                                            class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Pengumuman</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-10" data-post-id="10">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-10 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
-                                                border-color: #3f95a1;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
-                                            class="elementor elementor-707">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="0f261b5" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[]}'>
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
-                                                        data-id="0114adb" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
-                                                                data-id="4cc4bce" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="{{ route('eskulComponent') }}">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="119" height="119"
-                                                                            src="wp-content/uploads/2022/04/eskul.png"
-                                                                            class="attachment-full size-full wp-image-1223"
-                                                                            alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
-                                                                data-id="cdb9b26" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-link.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('eskulComponent') }}"
-                                                                            class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Ekstrakurikuler</span></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                    </div>
-                                    <div class="jet-listing-grid__item jet-listing-dynamic-post-9" data-post-id="9">
-                                        <style type="text/css">
-                                            .jet-listing-dynamic-post-9 .elementor-element.elementor-element-0114adb>.elementor-element-populated {
-                                                border-color: #3f95a1;
-                                            }
-                                        </style>
-                                        <div data-elementor-type="jet-listing-items" data-elementor-id="707"
-                                            class="elementor elementor-707">
-                                            <section
-                                                class="elementor-section elementor-top-section elementor-element elementor-element-0f261b5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                data-id="0f261b5" data-element_type="section"
-                                                data-settings='{"jet_parallax_layout_list":[]}'>
-                                                <div class="elementor-container elementor-column-gap-no">
-                                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0114adb"
-                                                        data-id="0114adb" data-element_type="column">
-                                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                                            <div class="elementor-element elementor-element-4cc4bce elementor-widget elementor-widget-image"
-                                                                data-id="4cc4bce" data-element_type="widget"
-                                                                data-widget_type="image.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <a href="{{ route('prestasiComponent') }}">
-                                                                        <img loading="lazy" decoding="async"
-                                                                            width="119" height="119"
-                                                                            src="wp-content/uploads/2022/04/prest.png"
-                                                                            class="attachment-full size-full wp-image-1218"
-                                                                            alt="" />
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-cdb9b26 elementor-widget elementor-widget-jet-listing-dynamic-link"
-                                                                data-id="cdb9b26" data-element_type="widget"
-                                                                data-widget_type="jet-listing-dynamic-link.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('prestasiComponent') }}"
-                                                                            class="jet-listing-dynamic-link__link"><span
-                                                                                class="jet-listing-dynamic-link__label">Prestasi</span></a>
                                                                     </div>
                                                                 </div>
                                                             </div>

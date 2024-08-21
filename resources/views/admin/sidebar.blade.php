@@ -77,13 +77,13 @@
         <a class="nav-link" href="{{ route('ppdb.index') }}">
             <i class="fas fa-user-plus"></i>
 
-            <span>PPDB</span></a>
+            <span>Humas & BKK</span></a>
     </li>
     <li class="nav-item {{ request()->segment(2) === 'ujian' ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('ujian.index') }}">
             <i class="fas fa-pencil-alt"></i>
 
-            <span>Ujian</span></a>
+            <span>Sarana & Prasarana</span></a>
     </li>
     <li class="nav-item {{ request()->segment(2) == 'guru' || request()->segment(2) == 'siswa' ? 'active' : '' }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2"

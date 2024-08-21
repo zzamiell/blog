@@ -53,7 +53,7 @@
                                                     Update
                                                 </button>
                                                 <form id="delete-form-{{ $item->id }}"
-                                                    action="{{ route('eskul.destroy', $item->id) }}" method="POST"
+                                                    action="{{ route('pengumuman.destroy', $item->id) }}" method="POST"
                                                     class="d-inline">
                                                     @csrf
                                                     @method('DELETE')

@@ -123,8 +123,8 @@ class PengumumanController extends Controller
     }
 
     public function destroy($id){
-        DB::table('eskul')->where('id', $id)->delete();
-        return redirect()->route('eskul.index')
-        ->with('success', 'berhasil hapus data eskul.');
+        DB::table('pengumuman')->where('id', $id)->delete();
+        return redirect()->route('pengumuman.index')
+        ->with('success', 'berhasil hapus data pengumuman.');
     }
 }
