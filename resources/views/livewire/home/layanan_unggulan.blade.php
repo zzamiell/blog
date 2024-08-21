@@ -124,7 +124,7 @@
                                                                 data-id="4cc4bce" data-element_type="widget"
                                                                 data-widget_type="image.default">
                                                                 <div class="elementor-widget-container">
-                                                                    <a href="{{ route('visimisiComponent') }}">
+                                                                    <a href="{{ route('sambutanComponent') }}">
                                                                         <img decoding="async" width="119"
                                                                             height="119"
                                                                             src="wp-content/uploads/2022/04/annouce.png"
@@ -138,7 +138,7 @@
                                                                 data-widget_type="jet-listing-dynamic-link.default">
                                                                 <div class="elementor-widget-container">
                                                                     <div class="jet-listing jet-listing-dynamic-link">
-                                                                        <a href="{{ route('visimisiComponent') }}"
+                                                                        <a href="{{ route('sambutanComponent') }}"
                                                                             class="jet-listing-dynamic-link__link"><span
                                                                                 class="jet-listing-dynamic-link__label">Profile</span></a>
                                                                     </div>

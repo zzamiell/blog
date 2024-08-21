@@ -37,7 +37,7 @@ class LandingPages extends Component
         $data['artikel'] = DB::table('artikel')->latest('id')->take(3)->get();
         $data['agenda'] = DB::table('agenda')->latest('id')->take(3)->get();
         $data['prestasi'] = DB::table('prestasi')->latest('id')->take(3)->get();
-        $data['guru'] = DB::table('users')->where('role','GURU')->latest('id')->take(3)->get();
+        $data['guru'] = DB::table('users')->where('role','GURU')->latest('id')->take(5)->get();
         $data['jurusan'] = DB::table('jurusan')->latest('id')->take(3)->get();
         $data['eskul'] = DB::table('eskul')->latest('id')->take(3)->get();
         $data['pengumuman'] = DB::table('pengumuman')->latest('id')->take(3)->get();

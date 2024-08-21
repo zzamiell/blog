@@ -105,7 +105,8 @@
                                                                     data-id="a7bb433" data-element_type="widget"
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <a href="guru/ramadian-t-laksana/index.html">
+                                                                        <a
+                                                                            href="{{ route('guruDetailComponent', $item->id) }}">
                                                                             <img loading="lazy" decoding="async"
                                                                                 width="394" height="579"
                                                                                 src="{{ $item->avatar }}"

@@ -50,7 +50,7 @@
                         data-id="2e9bb7db" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
                             <h2 class="elementor-heading-title elementor-size-default">Agenda terbaru dari Sekolah
-                                Crocoblock</h2>
+                                {{ $sekolah->nama_sekolah }}</h2>
                         </div>
                     </div>
                     <div class="elementor-element elementor-element-18161e4a elementor-widget elementor-widget-jet-listing-grid"

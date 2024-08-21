@@ -496,7 +496,7 @@
                                                         <li
                                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
                                                             <a href="{{ route('beritaComponent') }}"
-                                                                class="elementor-item">Artikel</a>
+                                                                class="elementor-item">Updates</a>
                                                         </li>
                                                         <li
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-552">

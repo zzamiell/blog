@@ -107,12 +107,10 @@
                                                                     <div class="elementor-widget-container">
                                                                         <a
                                                                             href="{{ route('jurusanDetailComponent', $item->slug) }}">
-                                                                            <img loading="lazy" decoding="async"
-                                                                                width="1300" height="867"
+                                                                            <img width="1300" height="867"
                                                                                 src="{{ $item->thumbnail }}"
                                                                                 class="attachment-full size-full wp-image-1301"
                                                                                 alt="{{ $item->jurusan }}"
-                                                                                srcset="{{ $item->jurusan }}"
                                                                                 sizes="(max-width: 1300px) 100vw, 1300px" />
                                                                         </a>
                                                                     </div>

@@ -53,7 +53,7 @@
                     data-id="5c724060" data-element_type="widget" data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default">
-                            <a href="{{ route('beritaComponent') }}">Artikel</a>
+                            <a href="{{ route('beritaComponent') }}">Updates</a>
                         </h2>
                     </div>
                 </div>

@@ -63,7 +63,7 @@
                                             <div class="elementor-widget-container">
                                                 <h2 class="elementor-heading-title elementor-size-default">Fasilitas
                                                     dari Sekolah
-                                                    Crocoblock</h2>
+                                                    {{ $sekolah->nama_sekolah }}</h2>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-22a84a8 elementor-widget elementor-widget-jet-listing-grid"
