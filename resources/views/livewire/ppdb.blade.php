@@ -53,7 +53,7 @@
                                                         font-size: 59px
                                                     }
                                                 </style>
-                                                <h2 class="elementor-heading-title elementor-size-default">ppdb
+                                                <h2 class="elementor-heading-title elementor-size-default">Humas&BKK
                                                 </h2>
                                             </div>
                                         </div>
@@ -61,9 +61,8 @@
                                             data-id="5b79795" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">ppdb
-                                                    dari Sekolah
-                                                    Crocoblock</h2>
+                                                <h2 class="elementor-heading-title elementor-size-default">Humas&BKK
+                                                </h2>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-22a84a8 elementor-widget elementor-widget-jet-listing-grid"

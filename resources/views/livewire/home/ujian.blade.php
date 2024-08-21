@@ -18,7 +18,7 @@
                                     data-id="13b0fd7" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Ujian
+                                            Sarana Prasarana
                                         </h2>
                                     </div>
                                 </div>
@@ -26,7 +26,7 @@
                                     data-id="78b8783" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <h2 class="elementor-heading-title elementor-size-default">
-                                            Ujian dari Sekolah {{ $sekolah->nama_sekolah }}
+                                            Sarana Prasarana dari Sekolah {{ $sekolah->nama_sekolah }}
                                         </h2>
                                     </div>
                                 </div>

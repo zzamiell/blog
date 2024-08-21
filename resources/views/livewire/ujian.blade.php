@@ -53,7 +53,8 @@
                                                         font-size: 59px
                                                     }
                                                 </style>
-                                                <h2 class="elementor-heading-title elementor-size-default">ujian
+                                                <h2 class="elementor-heading-title elementor-size-default">Sarana
+                                                    Prasarana
                                                 </h2>
                                             </div>
                                         </div>
@@ -61,9 +62,8 @@
                                             data-id="5b79795" data-element_type="widget"
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">ujian
-                                                    dari Sekolah
-                                                    Crocoblock</h2>
+                                                <h2 class="elementor-heading-title elementor-size-default">Sarana
+                                                    Prasarana</h2>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-22a84a8 elementor-widget elementor-widget-jet-listing-grid"
