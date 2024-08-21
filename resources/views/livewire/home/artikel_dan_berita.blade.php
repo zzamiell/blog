@@ -65,7 +65,7 @@
                                             data-post-id="1620">
                                             <style type="text/css">
                                                 .jet-listing-dynamic-post-1620 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link {
-                                                    background-color: #03626f;
+                                                    background-color: #2f9edd;
                                                 }
 
                                                 .jet-listing-dynamic-post-1620 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link:hover {
@@ -152,7 +152,7 @@
                                         data-post-id="1272">
                                         <style type="text/css">
                                             .jet-listing-dynamic-post-1272 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link {
-                                                background-color: #03626f;
+                                                background-color: #2f9edd;
                                             }
 
                                             .jet-listing-dynamic-post-1272 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link:hover {
@@ -241,7 +241,7 @@
                                         data-post-id="1270">
                                         <style type="text/css">
                                             .jet-listing-dynamic-post-1270 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link {
-                                                background-color: #03626f;
+                                                background-color: #2f9edd;
                                             }
 
                                             .jet-listing-dynamic-post-1270 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link:hover {

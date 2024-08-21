@@ -381,7 +381,7 @@
                                                     }
 
                                                     .jet-listing-dynamic-post-761 .elementor-element.elementor-element-8bedf5b .jet-countdown-timer__item-value {
-                                                        color: #03626f;
+                                                        color: #2f9edd;
                                                     }
                                                 </style>
                                                 <div data-elementor-type="jet-listing-items" data-elementor-id="11"

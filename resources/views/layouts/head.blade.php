@@ -1,4 +1,3 @@
-
 <meta name="robots" content="max-image-preview:large" />
 <link rel="alternate" type="application/rss+xml" title="Sekolah Template &raquo; Feed" href="feed/index.html" />
 <link rel="alternate" type="application/rss+xml" title="Sekolah Template &raquo; Umpan Komentar"
@@ -574,27 +573,26 @@
 <link rel="stylesheet" id="hello-elementor-header-footer-css"
     href="{{ asset('wp-content/themes/hello-elementor/header-footer.min41fe.css?ver=3.0.1') }}" media="all" />
 <link rel="stylesheet" id="elementor-frontend-css"
-    href="{{ asset('wp-content/plugins/elementor/assets/css/frontend-lite.min3cad.css?ver=3.21.8') }}"
-    media="all" />
+    href="{{ asset('wp-content/plugins/elementor/assets/css/frontend-lite.min3cad.css?ver=3.21.8') }}" media="all" />
 <style id="elementor-frontend-inline-css">
     .elementor-63 .elementor-element.elementor-element-1507cd83:not(.elementor-motion-effects-element-type-background),
     .elementor-63 .elementor-element.elementor-element-1507cd83>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-20bbbe0c.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-20bbbe0c.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-20bbbe0c.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-20bbbe0c.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-20bbbe0c.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-44e48cdb:not(.elementor-motion-effects-element-type-background),
@@ -626,18 +624,18 @@
     }
 
     .elementor-63 .elementor-element.elementor-element-2b9edfa5.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-2b9edfa5.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-2b9edfa5.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-2b9edfa5.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-2b9edfa5.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-22e8993a:not(.elementor-motion-effects-element-type-background),
@@ -669,78 +667,78 @@
     }
 
     .elementor-63 .elementor-element.elementor-element-290f2366.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-290f2366.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-290f2366.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-290f2366.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-290f2366.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-8557f5a.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-8557f5a.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-8557f5a.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-8557f5a.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-8557f5a.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-00e182f.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-00e182f.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-00e182f.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-00e182f.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-00e182f.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-d12f432.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-d12f432.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-d12f432.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-d12f432.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-d12f432.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-f15d9f5.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-f15d9f5.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-f15d9f5.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-f15d9f5.elementor-view-framed .elementor-icon,
     .elementor-63 .elementor-element.elementor-element-f15d9f5.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-63 .elementor-element.elementor-element-a170a30 .jet-listing-grid__slider .jet-slick-dots li {
@@ -752,20 +750,20 @@
     }
 
     .elementor-63 .elementor-element.elementor-element-a170a30 .jet-listing-grid__slider .jet-slick-dots li.slick-active {
-        background: #03626f;
+        background: #2f9edd;
     }
 
     .elementor-211 .elementor-element.elementor-element-a650e63 .elementor-icon-list-icon i {
-        color: #03626f;
+        color: #2f9edd;
     }
 
     .elementor-211 .elementor-element.elementor-element-a650e63 .elementor-icon-list-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-211 .elementor-element.elementor-element-2ff5733d:not(.elementor-motion-effects-element-type-background),
     .elementor-211 .elementor-element.elementor-element-2ff5733d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-211 .elementor-element.elementor-element-73a14fe9 .elementor-button {
@@ -779,11 +777,11 @@
 
     .elementor-211 .elementor-element.elementor-element-194dc767:not(.elementor-motion-effects-element-type-background),
     .elementor-211 .elementor-element.elementor-element-194dc767>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-211 .elementor-element.elementor-element-502e8cc .jet-ajax-search__field-icon {
-        color: #03626f;
+        color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-5bf79073 .elementor-social-icon {
@@ -796,93 +794,92 @@
     }
 
     .elementor-227 .elementor-element.elementor-element-704fc402 {
-        color: #03626f;
+        color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-5890c053.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-5890c053.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-5890c053.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-5890c053.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-5890c053.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-61b20440.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-61b20440.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-61b20440.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-61b20440.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-61b20440.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-3868172c.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-3868172c.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-3868172c.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-3868172c.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-3868172c.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-46944bf8.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-46944bf8.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-46944bf8.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-46944bf8.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-46944bf8.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-269d5771.elementor-view-stacked .elementor-icon {
-        background-color: #03626f;
+        background-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-269d5771.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-269d5771.elementor-view-default .elementor-icon {
-        color: #03626f;
-        border-color: #03626f;
+        color: #2f9edd;
+        border-color: #2f9edd;
     }
 
     .elementor-227 .elementor-element.elementor-element-269d5771.elementor-view-framed .elementor-icon,
     .elementor-227 .elementor-element.elementor-element-269d5771.elementor-view-default .elementor-icon svg {
-        fill: #03626f;
+        fill: #2f9edd;
     }
 
     .elementor-799 .elementor-element.elementor-element-3edb36b4 .elementor-heading-title {
-        color: #03626f;
+        color: #2f9edd;
     }
 </style>
 <link rel="stylesheet" id="elementor-post-5-css"
     href="{{ asset('wp-content/uploads/elementor/css/post-56696.css?ver=1717311675') }}" media="all" />
 <link rel="stylesheet" id="jet-popup-frontend-css"
-    href="{{ asset('wp-content/plugins/jet-popup/assets/css/jet-popup-frontend2846.css?ver=1.5.5') }}"
-    media="all" />
+    href="{{ asset('wp-content/plugins/jet-popup/assets/css/jet-popup-frontend2846.css?ver=1.5.5') }}" media="all" />
 <link rel="stylesheet" id="elementor-post-707-css"
     href="{{ asset('wp-content/uploads/elementor/css/post-70738ed.css?ver=1717311677') }}" media="all" />
 <link rel="stylesheet" id="elementor-post-14-css"
@@ -910,8 +907,7 @@
 <link rel="stylesheet" id="jet-blocks-css"
     href="{{ asset('wp-content/plugins/jet-blocks/assets/css/jet-blocks6f3e.css?ver=1.3.0') }}" media="all" />
 <link rel="stylesheet" id="jet-elements-css"
-    href="{{ asset('wp-content/plugins/jet-elements/assets/css/jet-elements61da.css?ver=2.6.2') }}"
-    media="all" />
+    href="{{ asset('wp-content/plugins/jet-elements/assets/css/jet-elements61da.css?ver=2.6.2') }}" media="all" />
 <link rel="stylesheet" id="jet-elements-skin-css"
     href="{{ asset('wp-content/plugins/jet-elements/assets/css/jet-elements-skin61da.css?ver=2.6.2') }}"
     media="all" />
@@ -925,8 +921,7 @@
     href="{{ asset('wp-content/plugins/elementor-pro/assets/css/frontend-lite.minac9e.css?ver=3.7.7') }}"
     media="all" />
 <link rel="stylesheet" id="jet-search-css"
-    href="{{ asset('wp-content/plugins/jet-search/assets/css/jet-search202b.css?ver=2.1.15') }}"
-    media="all" />
+    href="{{ asset('wp-content/plugins/jet-search/assets/css/jet-search202b.css?ver=2.1.15') }}" media="all" />
 <link rel="stylesheet" id="jet-tabs-frontend-css"
     href="{{ asset('wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend202b.css?ver=2.1.15') }}"
     media="all" />
@@ -987,4 +982,4 @@
     gtag('config', 'UA-224781030-1')
 </script>
 
-<meta name="theme-color" content="#03626F" />
+<meta name="theme-color" content="#2f9edd" />

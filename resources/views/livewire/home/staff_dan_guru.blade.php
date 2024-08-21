@@ -65,7 +65,7 @@
                                             data-post-id="112">
                                             <style type="text/css">
                                                 .jet-listing-dynamic-post-112 .elementor-element.elementor-element-9c68f04 .elementor-button {
-                                                    background-color: #03626f;
+                                                    background-color: #2f9edd;
                                                 }
                                             </style>
                                             <div data-elementor-type="jet-listing-items" data-elementor-id="20"
@@ -143,7 +143,7 @@
                                         data-post-id="1116">
                                         <style type="text/css">
                                             .jet-listing-dynamic-post-1116 .elementor-element.elementor-element-9c68f04 .elementor-button {
-                                                background-color: #03626f;
+                                                background-color: #2f9edd;
                                             }
                                         </style>
                                         <div data-elementor-type="jet-listing-items" data-elementor-id="20"
@@ -223,7 +223,7 @@
                                         data-post-id="1117">
                                         <style type="text/css">
                                             .jet-listing-dynamic-post-1117 .elementor-element.elementor-element-9c68f04 .elementor-button {
-                                                background-color: #03626f;
+                                                background-color: #2f9edd;
                                             }
                                         </style>
                                         <div data-elementor-type="jet-listing-items" data-elementor-id="20"

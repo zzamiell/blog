@@ -62,7 +62,7 @@
                                     <div class="jet-listing-grid__item jet-listing-dynamic-post-979" data-post-id="979">
                                         <style type="text/css">
                                             .jet-listing-dynamic-post-979 .elementor-element.elementor-element-6f7f173 .elementor-button {
-                                                background-color: #03626f;
+                                                background-color: #2f9edd;
                                             }
                                         </style>
                                         <div data-elementor-type="jet-listing-items" data-elementor-id="942"
@@ -143,7 +143,7 @@
                               .jet-listing-dynamic-post-978
                                 .elementor-element.elementor-element-6f7f173
                                 .elementor-button {
-                                background-color: #03626f;
+                                background-color: #2f9edd;
                               }
                             </style>
                             <div
@@ -265,7 +265,7 @@
                               .jet-listing-dynamic-post-977
                                 .elementor-element.elementor-element-6f7f173
                                 .elementor-button {
-                                background-color: #03626f;
+                                background-color: #2f9edd;
                               }
                             </style>
                             <div
@@ -387,7 +387,7 @@
                               .jet-listing-dynamic-post-976
                                 .elementor-element.elementor-element-6f7f173
                                 .elementor-button {
-                                background-color: #03626f;
+                                background-color: #2f9edd;
                               }
                             </style>
                             <div
@@ -509,7 +509,7 @@
                               .jet-listing-dynamic-post-970
                                 .elementor-element.elementor-element-6f7f173
                                 .elementor-button {
-                                background-color: #03626f;
+                                background-color: #2f9edd;
                               }
                             </style>
                             <div
@@ -631,7 +631,7 @@
                               .jet-listing-dynamic-post-939
                                 .elementor-element.elementor-element-6f7f173
                                 .elementor-button {
-                                background-color: #03626f;
+                                background-color: #2f9edd;
                               }
                             </style>
                             <div

@@ -797,7 +797,7 @@
                                                                                 data-post-id="1620">
                                                                                 <style type="text/css">
                                                                                     .jet-listing-dynamic-post-1620 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link {
-                                                                                        background-color: #03626f;
+                                                                                        background-color: #2f9edd;
                                                                                     }
 
                                                                                     .jet-listing-dynamic-post-1620 .elementor-element.elementor-element-a0098aa .jet-listing-dynamic-terms__link:hover {
@@ -960,7 +960,7 @@
                                                                                     }
 
                                                                                     .jet-listing-dynamic-post-1593 .elementor-element.elementor-element-8bedf5b .jet-countdown-timer__item-value {
-                                                                                        color: #03626f;
+                                                                                        color: #2f9edd;
                                                                                     }
                                                                                 </style>
                                                                                 <div data-elementor-type="jet-listing-items"
@@ -1007,7 +1007,7 @@
                                                                                                         <div
                                                                                                             class="elementor-widget-container">
                                                                                                             <a
-                                                                                                                href="{{route('agendaDetailComponent', $item->slug)}}">
+                                                                                                                href="{{ route('agendaDetailComponent', $item->slug) }}">
                                                                                                                 <img width="450"
                                                                                                                     height="426"
                                                                                                                     src="{{ $item->thumbnail }}"
@@ -1161,7 +1161,7 @@
                                                                                                             <div
                                                                                                                 class="elementor-button-wrapper">
                                                                                                                 <a class="elementor-button elementor-button-link elementor-size-xs"
-                                                                                                                    href="{{route('pengumumanDetailComponent', $item->slug)}}">
+                                                                                                                    href="{{ route('pengumumanDetailComponent', $item->slug) }}">
                                                                                                                     <span
                                                                                                                         class="elementor-button-content-wrapper">
                                                                                                                         <span
@@ -1183,7 +1183,7 @@
                                                                                                         <div
                                                                                                             class="elementor-widget-container">
                                                                                                             <a
-                                                                                                                href="{{route('pengumumanDetailComponent', $item->slug)}}">
+                                                                                                                href="{{ route('pengumumanDetailComponent', $item->slug) }}">
                                                                                                                 <img width="640"
                                                                                                                     height="424"
                                                                                                                     src="{{ asset($item->thumbnail) }}"

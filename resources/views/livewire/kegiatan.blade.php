@@ -72,7 +72,7 @@
                                                     data-post-id="979">
                                                     <style type="text/css">
                                                         .jet-listing-dynamic-post-979 .elementor-element.elementor-element-6f7f173 .elementor-button {
-                                                            background-color: #03626f;
+                                                            background-color: #2f9edd;
                                                         }
                                                     </style>
                                                     <div data-elementor-type="jet-listing-items" data-elementor-id="942"
