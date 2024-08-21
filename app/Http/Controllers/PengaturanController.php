@@ -112,7 +112,7 @@ class PengaturanController extends Controller
     }
 
     public function update_profile(Request $request){
-       $data = $request->except('_token');
+        $data = $request->except('_token');
         DB::table('sekolah')->where('id', 1)->update($data);
 
         return redirect()->route('pengaturan.index')

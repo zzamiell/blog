@@ -361,35 +361,35 @@
                                                 <div class="elementor-social-icons-wrapper elementor-grid">
                                                     <span class="elementor-grid-item">
                                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-edf0712"
-                                                            href="https://facebook.com/amaryourbae" target="_blank">
+                                                            href="{{ $sekolah->facebook }}" target="_blank">
                                                             <span class="elementor-screen-only">Facebook</span>
                                                             <i class="fab fa-facebook"></i>
                                                         </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
                                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-57b15eb"
-                                                            href="https://twitter.com/amaryourbae" target="_blank">
+                                                            href="{{ $sekolah->twitter }}" target="_blank">
                                                             <span class="elementor-screen-only">Twitter</span>
                                                             <i class="fab fa-twitter"></i>
                                                         </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
                                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-e9d5016"
-                                                            href="https://instagram.com/amaryourbae" target="_blank">
+                                                            href="{{ $sekolah->instagram }}" target="_blank">
                                                             <span class="elementor-screen-only">Instagram</span>
                                                             <i class="fab fa-instagram"></i>
                                                         </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
                                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-6c4a13a"
-                                                            href="https://youtube.com/" target="_blank">
+                                                            href="{{ $sekolah->youtube }}" target="_blank">
                                                             <span class="elementor-screen-only">Youtube</span>
                                                             <i class="fab fa-youtube"></i>
                                                         </a>
                                                     </span>
                                                     <span class="elementor-grid-item">
                                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-whatsapp elementor-repeater-item-cbc1604"
-                                                            href="https://wa.me/6282233000884" target="_blank">
+                                                            href="{{ $sekolah->whatsapp }}" target="_blank">
                                                             <span class="elementor-screen-only">Whatsapp</span>
                                                             <i class="fab fa-whatsapp"></i>
                                                         </a>

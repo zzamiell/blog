@@ -142,7 +142,36 @@
                             <textarea class="form-control" id="alamat" name="alamat" rows="4" placeholder="Masukkan Alamat">{{ $data->alamat }}</textarea>
                         </div>
 
+                        <hr>
 
+                        <h2>Social Media Sekolah</h2>
+                        <hr>
+
+                        <div class="mb-3">
+                            <label for="sambutan" class="form-label">Facebook</label>
+                            <input type="text" class="form-control" id="facebook" value="{{ $data->facebook }}"
+                                name="facebook" placeholder="Masukkan facebook Sekolah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sambutan" class="form-label">Twitter</label>
+                            <input type="text" class="form-control" id="twitter" value="{{ $data->twitter }}"
+                                name="twitter" placeholder="Masukkan twitter Sekolah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sambutan" class="form-label">Instagram</label>
+                            <input type="text" class="form-control" id="instagram" value="{{ $data->instagram }}"
+                                name="instagram" placeholder="Masukkan instagram Sekolah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sambutan" class="form-label">Youtube</label>
+                            <input type="text" class="form-control" id="youtube" value="{{ $data->youtube }}"
+                                name="youtube" placeholder="Masukkan youtube Sekolah">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sambutan" class="form-label">Whatsapp</label>
+                            <input type="text" class="form-control" id="whatsapp" name="whatsapp"
+                                value="{{ $data->whatsapp }}" placeholder="Masukkan whatsapp Sekolah">
+                        </div>
 
                         <div class="d-flex justify-content-end mt-5">
                             <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
