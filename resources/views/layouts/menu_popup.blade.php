@@ -231,45 +231,45 @@
                                     <ul id="menu-2-6bed439a" class="elementor-nav-menu">
                                         <li
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-63 current_page_item menu-item-544">
-                                            <a href="index.html" aria-current="page"
+                                            <a href="{{route('index')}}" aria-current="page"
                                                 class="elementor-item elementor-item-active" tabindex="-1">Beranda</a>
                                         </li>
                                         <li
                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-545">
-                                            <a href="#" class="elementor-item elementor-item-anchor"
+                                            <a href="{{route('sambutanComponent')}}" class="elementor-item elementor-item-anchor"
                                                 tabindex="-1">Profile</a>
                                             <ul class="sub-menu elementor-nav-menu--dropdown">
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-546">
-                                                    <a href="ekstrakurikuler/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('eskulComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Ekstrakurikuler</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547">
-                                                    <a href="fasilitas/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('fasilitasComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Fasilitas</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548">
-                                                    <a href="guru/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('guruComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Guru</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549">
-                                                    <a href="sambutan-kepala-sekolah/index.html"
+                                                    <a href="{{route('sambutanComponent')}}"
                                                         class="elementor-sub-item" tabindex="-1">Sambutan Kepala
                                                         Sekolah</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-550">
-                                                    <a href="visi-dan-misi/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('visimisiComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Visi dan Misi</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551">
-                                            <a href="artikel/index.html" class="elementor-item"
+                                            <a href="{{route('beritaComponent')}}" class="elementor-item"
                                                 tabindex="-1">Artikel</a>
                                         </li>
                                         <li
@@ -279,22 +279,22 @@
                                             <ul class="sub-menu elementor-nav-menu--dropdown">
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553">
-                                                    <a href="agenda/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('agendaComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Agenda</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554">
-                                                    <a href="pengumuman/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('pengumumanComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Pengumuman</a>
                                                 </li>
                                                 <li
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555">
-                                                    <a href="prestasi/index.html" class="elementor-sub-item"
+                                                    <a href="{{route('prestasiComponent')}}" class="elementor-sub-item"
                                                         tabindex="-1">Prestasi</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li
+                                        {{-- <li
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556">
                                             <a href="result-ppdb/index.html" class="elementor-item"
                                                 tabindex="-1">Result PPDB</a>
@@ -325,7 +325,7 @@
                                                         class="elementor-sub-item" tabindex="-1">Creayoon School</a>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </nav>
                             </div>
