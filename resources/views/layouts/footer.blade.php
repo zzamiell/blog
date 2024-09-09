@@ -291,9 +291,7 @@
         },
         post: {
             id: 63,
-            title: 'Sekolah%20Template%20%E2%80%93%20Crocoblock%20x%20Elementor',
-            excerpt: '',
-            featuredImage: false,
+            featuredImage: true,
         },
     }
 </script>

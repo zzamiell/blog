@@ -44,6 +44,7 @@ class ArtikelController extends Controller
         $filename = 'images/thumbnail/' . $imageName;
 
         $slug = Str::slug($request->judul);
+        
 
         $data = $request->except('_token','thumbnail');
         $data['thumbnail'] = $filename;
@@ -96,6 +97,19 @@ class ArtikelController extends Controller
         ->with('success', 'berhasil update data artikel.');
     }
 
+    public function show($slug)
+    {
+    // Mencari artikel berdasarkan slug
+    $artikel = DB::table('artikel')->where('slug', $slug)->first();
+
+    // Jika artikel tidak ditemukan, tampilkan halaman 404
+    if (!$artikel) {
+        abort(404, 'Artikel tidak ditemukan.');
+    }
+
+    // Kirim data artikel ke view
+    return view('artikel.show', ['artikel' => $artikel]);
+    }
     public function destroy($id){
         DB::table('artikel')->where('id', $id)->delete();
         return redirect()->route('artikel.index')

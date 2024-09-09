@@ -272,7 +272,7 @@
                                     }
                                 </style>
                                 <p>
-                                    {!! strip_tags($prestasi->deskripsi) !!}
+                                    {!! $prestasi->deskripsi !!}
                                 </p>
                             </div>
                         </div>

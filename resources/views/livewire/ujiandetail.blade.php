@@ -13,9 +13,8 @@
                             data-id="5e7b9cde" data-element_type="widget" data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img fetchpriority="high" width="700" height="393"
-                                    src="../../wp-content/uploads/2022/03/drum.jpg"
+                                    src="{{asset($ujian->thumbnail)}}"
                                     class="attachment-full size-full wp-image-1281" alt=""
-                                    srcset="https://sekolah.flymotion.my.id/wp-content/uploads/2022/03/drum.jpg 700w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/03/drum-300x168.jpg 300w, https://sekolah.flymotion.my.id/wp-content/uploads/2022/03/drum-150x84.jpg 150w"
                                     sizes="(max-width: 700px) 100vw, 700px">
                             </div>
                         </div>

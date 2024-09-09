@@ -314,7 +314,7 @@
                                     }
                                 </style>
                                 <p>
-                                    {!! strip_tags($agenda->deskripsi) !!}
+                                    {!! $agenda->deskripsi !!}
                                 </p>
                             </div>
                         </div>

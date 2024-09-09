@@ -221,8 +221,7 @@
                         <div class="elementor-element elementor-element-452cb1ef elementor-widget elementor-widget-theme-post-content"
                             data-id="452cb1ef" data-element_type="widget" data-widget_type="theme-post-content.default">
                             <div class="elementor-widget-container">
-
-                                {!! strip_tags($artikel->content) !!}
+                                {!! $artikel->content !!}
                             </div>
                         </div>
                         <section

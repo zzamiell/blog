@@ -9,6 +9,17 @@
     <title>{{ $title ?? 'Admin' }}</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+    <!-- Meta Tags for Open Graph (OG) -->
+  
+   <meta property="og:title" content="OFFICIAL WEB SMK AL-FALAH WINONG PATI">
+    <meta property="og:description" content="dev@ALX">
+    <meta property="og:image" content="{{ asset('images/sekolah/1725622980.png') }}">
+    <meta property="og:url" content="{{ url()->full() }}">
+    <meta property="og:type" content="website">
+
     @include('layouts.head')
     {{-- END TEMPLATE WP --}}
 

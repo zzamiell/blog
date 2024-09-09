@@ -47,6 +47,8 @@ use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\PengaturanController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -62,6 +64,7 @@ Route::get('/', LandingPages::class)->name('index');
 Route::get('/search', Search::class)->name('searchComponent');
 
 Route::get('/alumni', Alumni::class)->name('alumniComponent');
+Route::get('/artikel/{slug}', [ArtikelController::class, 'show'])->name('artikel.show');
 
 Route::get('/visi-misi', VisiMisi::class)->name('visimisiComponent');
 Route::get('/sambutan', Sambutan::class)->name('sambutanComponent');

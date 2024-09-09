@@ -696,9 +696,7 @@
                                             data-widget_type="heading.default">
                                             <div class="elementor-widget-container">
                                                 <h2 class="elementor-heading-title elementor-size-default">
-                                                    <a href="https://wa.me/{{ $sekolah->phone }}">Kirim form pertanyaan
-                                                        melalui
-                                                        WhatsApp</a>
+                                                    <a href="https://wa.me/6282138103311?&text=FROM%3AWEB%20%0AHalo%2C%20saya%20ingin%20bertanya%20seputar%20SMK%20AL-FALAH%20WINONG😊">Chat WA</a>
                                                 </h2>
                                             </div>
                                         </div>
